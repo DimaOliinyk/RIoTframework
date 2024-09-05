@@ -5,3 +5,4 @@ Colors:
   tileBackground #202226    |   #ffffff
   primary        #bb86fc    |   #6200ed
   text           #939599    |   #bb86fc    
+  darkPrimary    #3d2b54    |
