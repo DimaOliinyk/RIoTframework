@@ -1,0 +1,7 @@
+Colors:    
+              dark theme    |  white theme
+============================+=================
+  background     #121212    |   #bb86fc
+  tileBackground #202226    |   #ffffff
+  primary        #bb86fc    |   #6200ed
+  text           #939599    |   #bb86fc    
