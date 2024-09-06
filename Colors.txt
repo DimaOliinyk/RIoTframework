@@ -6,3 +6,5 @@ Colors:
   popupMenuBack. #1c1c21    |   
   primary        #bb86fc    |   #6200ed
   text           #939599    |   #bb86fc   
+  red            #cf6679    |   #b00020
+  green          #03dac6    |   #018786
