@@ -3,5 +3,6 @@ Colors:
 ============================+=================
   background     #121212    |   #bb86fc
   tileBackground #202226    |   #ffffff
+  popupMenuBack. #1c1c21    |   
   primary        #bb86fc    |   #6200ed
   text           #939599    |   #bb86fc   
