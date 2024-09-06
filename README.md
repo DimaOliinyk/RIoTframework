@@ -1,4 +1,4 @@
-# RIOTframework
+# RIoTframework
 Coursework for modern programming technologies
 
 App for creating GUI to control and communicate with IoT devices (Arduino boards). 
