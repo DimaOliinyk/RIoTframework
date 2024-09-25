@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CourseWorkUI</name>
+    </assembly>
+    <members>
+        <member name="T:CourseWorkUI.AppState">
+            <summary>
+            Represents the current state of the App 
+            </summary>
+        </member>
+        <member name="P:CourseWorkUI.AppState.IsRunning">
+            <summary>
+            Allows to check whether the app 
+            is in the running or editing mode 
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.AppState.Change">
+            <summary>
+            Changes the mode to the opposite (Running/Editing)
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.DrawOnCanvas(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)">
+            <summary>
+            Draws Element onto the passed canvas
+            </summary>
+            <param name="canvas"></param>
+            <param name="dirtyRect"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.DrawElementOverridable(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)">
+            <summary>
+            Function that gives client an ability 
+            to write drawing algorithm 
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1 @@
+D:\temp\CourseWorkUI\CourseWorkUI\CourseWorkUI.csproj;x64

@@ -1,0 +1,65 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CourseWorkUI
+build_property.ProjectDir = D:\temp\CourseWorkUI\CourseWorkUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/temp/CourseWorkUI/CourseWorkUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/UI/Menues/AddMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.AddMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\AddMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\AddMenu.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/UI/Menues/FilesMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.FilesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\FilesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\FilesMenu.xaml
+
+[D:/temp/CourseWorkUI/CourseWorkUI/UI/Menues/PropertiesMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.PropertiesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\PropertiesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\PropertiesMenu.xaml
