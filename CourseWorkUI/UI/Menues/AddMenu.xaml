@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.AddMenu"
+             Title="AddMenu">
+
+    <Grid BackgroundColor="#121212">
+        <Grid VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            
+            <Label HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Padding="16,16"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Text="Add Tile"
+                   TextColor="Black"
+                   FontFamily="MyMainMediumFont"
+                   FontSize="Medium"
+                   BackgroundColor="#bb86fc"/>
+
+            <CollectionView x:Name="VwCollectionView"
+                            Grid.Row="1"
+                            SelectionMode="Single"
+                            SelectionChanged="VwCollectionView_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="5,5">
+                            <Border BackgroundColor="#202226"
+                                    StrokeThickness="2"
+                                    Padding="32,16"
+                                    StrokeShape="RoundRectangle 40,0,0,40">
+                                <Border.Stroke>
+                                    <LinearGradientBrush EndPoint="0,1">
+                                        <GradientStop Color="Grey"
+                                                      Offset="0.1" />
+                                        <GradientStop Color="#6200ee"
+                                                      Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Border.Stroke>    
+
+                                <Label Text="{Binding .}"
+                                       FontFamily="MyMainHeavyFont"
+                                       HorizontalOptions="Start"/>
+                                <!--<Image Source="" HorizontalOptions="End"/>-->
+
+                               
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <ScrollView VerticalOptions="EndAndExpand">
+            <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             BackgroundColor="#121212">
+
+                <Grid VerticalOptions="EndAndExpand"
+                      BackgroundColor="#121212"
+                      Padding="0,0,2,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnCancel"
+                            VerticalOptions="EndAndExpand"
+                            Background="#121212"
+                            Text="Cancel"
+                            TextColor="Grey"
+                            FontFamily="MyMainHeavyFont"
+                            FontSize="Medium"
+                            BorderColor="Grey"
+                            BorderWidth="2"
+                            Clicked="BtnCancel_Clicked"
+                            Margin="2,2,2,2"/>
+                </Grid>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
