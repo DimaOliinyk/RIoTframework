@@ -1,0 +1,83 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CourseWorkUI"
+             x:Class="CourseWorkUI.App">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+
+                <ResourceDictionary>
+                    <!-- Dark theme colors -->
+                    <Color x:Key="BackgroundColorDark">#121212</Color>
+                    <Color x:Key="TileBackgroundColorDark">#202226</Color>
+                    <Color x:Key="PrimaryColorDark">#bb86fc</Color>
+                    <Color x:Key="TextColorDark">#939599</Color>
+                    <Color x:Key="ContrastTextColorDark">#FFF</Color>
+
+                    <!-- Ligth theme colors -->
+                    <Color x:Key="BackgroundColor">#c6c2cc</Color>
+                    <Color x:Key="TileBackgroundColor">#ffffff</Color>
+                    <Color x:Key="PrimaryColor">#bb86fc</Color>
+                    <Color x:Key="TextColor">#bb86fc</Color>
+                    <Color x:Key="ContrastTextColor">#000</Color>
+
+                    <!-- Common colors -->
+                    <Color x:Key="CommonPrimaryColor">#3700b3</Color>
+                    <Color x:Key="Red">#cf6679</Color>
+                    <Color x:Key="Green">#03dac6</Color>
+                    
+                    <!-- Delete button -->
+                    <Style x:Key="DeleteBtn" TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                                           Dark={StaticResource BackgroundColorDark},
+                                           Light={StaticResource BackgroundColor}}"/>
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="FontFamily" Value="MyMainHeavyFont"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+                        <Setter Property="Margin" Value="2,2,2,2"/>
+
+                        <Setter Property="TextColor" Value="{StaticResource Red}"/>
+                        <Setter Property="BorderColor" Value="{StaticResource Red}"/>
+                    </Style>
+
+                    <!-- Save button -->
+                    <Style x:Key="SaveBtn" TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}"/>
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="FontFamily" Value="MyMainHeavyFont"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+                        <Setter Property="Margin" Value="2,2,2,2"/>
+
+                        <Setter Property="TextColor" Value="{StaticResource Green}"/>
+                        <Setter Property="BorderColor" Value="{StaticResource Green}"/>
+                    </Style>
+
+                    <!-- Save button -->
+                    <Style x:Key="CancelButton" TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}"/>
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="FontFamily" Value="MyMainHeavyFont"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+                        <Setter Property="Margin" Value="2,2,2,2"/>
+
+                        <Setter Property="TextColor" Value="{AppThemeBinding 
+                                            Dark={StaticResource TextColorDark},
+                                            Light={StaticResource TextColor}}"/>
+                        <Setter Property="BorderColor" Value="{AppThemeBinding 
+                                            Dark={StaticResource TextColorDark},
+                                            Light={StaticResource TextColor}}"/>
+                    </Style>
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CourseWorkUI</name>
+    </assembly>
+    <members>
+        <member name="T:CourseWorkUI.AppState">
+            <summary>
+            Represents the current state of the App 
+            </summary>
+        </member>
+        <member name="P:CourseWorkUI.AppState.IsRunning">
+            <summary>
+            Allows to check whether the app 
+            is in the running or editing mode 
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.AppState.Change">
+            <summary>
+            Changes the mode to the opposite (Running/Editing)
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.MainPage.GraphicsViewDrawable">
+            <summary>
+            Internal class which draws all dynamic GUI
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.MCanvas_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when 
+            the canvas is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.BtnRunPause_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when the Run/Pause button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.BtnNavBar_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when Navigation Bar button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.HandleModalPopping(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when any page 
+            (PropertiesMenu, AddMenu, FilesMenu)
+            gets closed
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:CourseWorkUI.UI.ColorDictionary">
+            <summary>
+            Class, collection of the colors
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.TileGrid">
+            <summary>
+            Resposible for saving all Tiles  
+            and allow easy access to perform 
+            operations on them
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.SpaceIsOccupied(CourseWorkUI.Utilities.Position)">
+            <summary>
+            Checks whether space is occupied by a Tile
+            </summary>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.CanAddTile(CourseWorkUI.UI.Tile)">
+            <summary>
+            Checks whether tile can be added
+            </summary>
+            <param name="newTile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.GetTile(CourseWorkUI.Utilities.Position)">
+            <summary>
+            Gets Tile by specified position
+            </summary>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.AddTile(CourseWorkUI.UI.Tile)">
+            <summary>
+            Adds Tile
+            </summary>
+            <param name="newTile"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.RemoveTile(CourseWorkUI.UI.Tile)">
+            <summary>
+            Removes Tile
+            </summary>
+            <param name="newTile"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.RedrawOnCanvas(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)">
+            <summary>
+            Calls DrawOnCanvas for each Tile
+            </summary>
+            <param name="canvas"></param>
+            <param name="dirtyRect"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.DrawPoints(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.Double)">
+            <summary>
+            Draws helper UI elements to 
+            show where Tiles can be drawn
+            </summary>
+            <param name="canvas"></param>
+            <param name="dirtyRect"></param>
+            <param name="tileSize"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.Clear">
+            <summary>
+            Deletes all Tiles
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.TileGrid.CheckPosition(CourseWorkUI.UI.Tile,CourseWorkUI.Utilities.Position)">
+            <summary>
+            Helper function to check position
+            </summary>
+            <param name="tile"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CourseWorkUI.UI.ETileGrid">
+            <summary>
+            Enum of error codes 
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Menues.AddMenu">
+            <summary>
+            Menu responsible for asking the user 
+            types of Tiles
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.AddMenu.VwCollectionView_SelectionChanged(System.Object,Microsoft.Maui.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Event handler for when the item 
+            in the collection view is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.AddMenu.BtnCancel_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when the Cnacel button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnOpen_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Open Project button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnNew_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for New Project button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnSave_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Saving Project button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.PropertiesMenu.BtnDelete_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Delete button.
+            Deletes Tile from Grid
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.PropertiesMenu.BtnSave_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Save button.
+            Sets all passed values of properties 
+            to Tile's properties 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:CourseWorkUI.UI.Menues.TileFactory">
+            <summary>
+            Class resposible for creation of Tiles
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,System.Single,CourseWorkUI.UI.Menues.TileTypes)">
+            <summary>
+            Function resposible for tile creation.
+            </summary>
+            <param name="pos"></param>
+            <param name="tileSize"></param>
+            <param name="tileType"></param>
+            <returns></returns>
+            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException"></exception>
+        </member>
+        <member name="T:CourseWorkUI.UI.Menues.TileTypes">
+            <summary>
+            Types of Tiles
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.Button">
+            <summary>
+            Class representing UI element Button 
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.CircularChart">
+            <summary>
+            Gauge Tile
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.Graph">
+            <summary>
+            Graph in Cartesian coordinate system
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.Led">
+            <summary>
+            Light emitting diod as Tile
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.TProperties.TProperty">
+            <summary>
+            Abstract class representing property of a Tile
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tiles.TProperties.TProperty.ToXaml(Microsoft.Maui.Controls.Grid,System.Int32)">
+            <summary>
+            Creates visual appearence of the property 
+            with Maui.Controls.Entry as input and 
+            adds as child of Maui.Controls.Grid.
+            
+            Returned value allows to bind to properties 
+            value
+            </summary>
+            <param name="vs"> Grid to which appearence of property will be added </param>
+            <param name="rowCount"> Row number of passed Grid at which property will be added </param>
+            <returns>Maui.Controls.Entry</returns>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tiles.TProperties.TProperty.IsCorrect">
+            <summary>
+            Checks for correctness of the value of property
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tiles.TPropertiesp.TPropertyName">
+            <summary>
+            Class resposible for saving the name 
+            of the Tile as TProperty
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.UI.Tile">
+            <summary>
+            Represents a UI element dynamically added by user
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.DrawOnCanvas(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)">
+            <summary>
+            Draws Element onto the passed canvas
+            </summary>
+            <param name="canvas"></param>
+            <param name="dirtyRect"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.DrawElementOverridable(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)">
+            <summary>
+            Function that gives client an ability 
+            to write drawing algorithm 
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.DrawName(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.String)">
+            <summary>
+            Function which will draw the name 
+            of the element on top of it
+            </summary>
+            <param name="canvas"></param>
+            <param name="dirtyRect"></param>
+            <param name="name"> Name of the Tile </param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.Clicked">
+            <summary>
+            Gets called when the Tile is 
+            determind to have been clicked
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
+            <summary>
+            Rounds the position 
+            </summary>
+            <param name="tileSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position._RoundHelper(System.Single,System.Single)">
+            <summary>
+            Helper rounding functions
+            </summary>
+            <param name="val"></param>
+            <param name="tileSize"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.PropertiesMenu"
+             Title="PropertiesMenu">
+
+    <Grid BackgroundColor="{AppThemeBinding 
+                                    Dark={StaticResource BackgroundColorDark},
+                                    Light={StaticResource BackgroundColor}}">
+        <Grid VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Page title -->
+            <Label HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Padding="16,16"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Text="Properties"
+                   FontSize="Medium"
+                   FontFamily="MyMainMediumFont"
+                   TextColor="Black"
+                   BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark},
+                                        Light={StaticResource PrimaryColor}}"/>
+        </Grid>
+
+        <!-- Properties get added here at runtime -->
+        <ScrollView VerticalOptions="Start"
+                    Margin="20,66,20,5">
+            <Grid x:Name="VSProperties"
+                  Margin="2,2,2,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ScrollView>
+        
+        <!-- Bottom UI elements -->
+        <ScrollView VerticalOptions="End">
+            <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                 BackgroundColor="{AppThemeBinding 
+                                                    Dark={StaticResource BackgroundColorDark},
+                                                    Light={StaticResource BackgroundColor}}">
+                
+                <Grid VerticalOptions="End"
+                      Padding="0,0,2,0"> 
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                
+                    <!-- Save button -->
+                    <Button x:Name="BtnSave"
+                            Grid.Column="0"
+                            Text="Save"
+                            Clicked="BtnSave_Clicked"
+                            Style="{StaticResource SaveBtn}"/>
+                    
+                    <!-- Delete button -->
+                    <Button x:Name="BtnDelete"
+                            Grid.Column="1"
+                            Text="Delete"
+                            Clicked="BtnDelete_Clicked"
+                            Style="{StaticResource DeleteBtn}"/>
+                </Grid>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.AddMenu"
+             Title="AddMenu">
+
+    <Grid BackgroundColor="{AppThemeBinding 
+                                Dark={StaticResource BackgroundColorDark},
+                                Light={StaticResource BackgroundColor}}">
+        <Grid VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Title of the menu -->
+            <Label HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Padding="16,16"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Text="Add Tile"
+                   TextColor="Black"
+                   FontFamily="MyMainMediumFont"
+                   FontSize="Medium"
+                   BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark},
+                                        Light={StaticResource PrimaryColor}}"/>
+
+            <!-- List of Tiles -->
+            <CollectionView x:Name="VwCollectionView"
+                            Grid.Row="1"
+                            SelectionMode="Single"
+                            SelectionChanged="VwCollectionView_SelectionChanged">
+                
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="5,5">
+                            <!-- Frame of items in the list -->
+                            <Border BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}"
+                                    StrokeThickness="2"
+                                    Padding="32,16"
+                                    StrokeShape="RoundRectangle 40,0,0,40">
+                                <!-- Coloring of the frame -->
+                                <Border.Stroke>
+                                    <LinearGradientBrush EndPoint="0,1">
+                                        <GradientStop Color="{AppThemeBinding 
+                                                                Dark={StaticResource TextColorDark},
+                                                                Light={StaticResource TextColor}}"
+                                                      Offset="0.1" />
+                                        <GradientStop Color="{StaticResource CommonPrimaryColor}"
+                                                      Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Border.Stroke>    
+
+                                <Label Text="{Binding .}"
+                                       FontFamily="MyMainHeavyFont"
+                                       HorizontalOptions="Start"/>
+                                <!--<Image Source="" HorizontalOptions="End"/>-->
+                               
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <!-- Bottom UI elements -->
+        <ScrollView VerticalOptions="EndAndExpand">
+            <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}">
+
+                <Grid VerticalOptions="EndAndExpand"
+                      Padding="0,0,2,0"
+                      BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Cancel button -->
+                    <Button x:Name="BtnCancel"
+                            VerticalOptions="EndAndExpand"
+                            Text="Cancel"                            
+                            Clicked="BtnCancel_Clicked"
+                            Style="{StaticResource CancelButton}"/>
+                </Grid>     
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

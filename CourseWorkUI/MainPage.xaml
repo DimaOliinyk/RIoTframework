@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.MainPage">
+    
+    <!-- Page's header -->
+    <Shell.TitleView>
+        <Grid>            
+            <!-- App name and nav bar buttons -->
+            <HorizontalStackLayout VerticalOptions="CenterAndExpand"
+                                   Spacing="2">
+
+                <!-- Nav bar button -->
+                <ImageButton x:Name="BtnNavBar"
+                             Source="file_options.png" 
+                             MaximumWidthRequest="30"
+                             Clicked="BtnNavBar_Clicked"/>
+
+                <!-- Title of the project -->
+                <Label x:Name="LblProjectsName"
+                       Text="RIoT"
+                       Margin="40,0,0,0"
+                       FontFamily="MyMainMediumFont"
+                       FontSize="36"
+                       MaximumWidthRequest="200"
+                       HorizontalOptions="Start"
+                       TextColor="Black"/>
+
+            </HorizontalStackLayout>
+            <!-- Settings and Run/Pause buttons -->
+            <HorizontalStackLayout HorizontalOptions="End"
+                                   Spacing="20"
+                                   Margin="10">
+                
+                <!-- Settings button -->
+                <ImageButton x:Name="Btnsettings" 
+                             Source="settings.png"
+                             MaximumWidthRequest="30"/>
+
+                <!-- Run/Pause button -->
+                <ImageButton x:Name="BtnRunPause"
+                             Source="run.png"
+                             MaximumWidthRequest="30"
+                             Clicked="BtnRunPause_Clicked"/>
+
+            </HorizontalStackLayout>
+        </Grid>
+    </Shell.TitleView>
+
+    <!-- Main canvas -->
+    <StackLayout x:Name="MainStackLayout"
+                 BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource BackgroundColorDark}, 
+                                        Light={StaticResource BackgroundColor}}"
+                 HorizontalOptions="FillAndExpand"                 
+                 Padding="12">
+        <!-- Canvas -->
+        <GraphicsView x:Name="Layout"
+                      HorizontalOptions="FillAndExpand"
+				      VerticalOptions="FillAndExpand">
+            <!-- Clicking canvas event -->
+            <GraphicsView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="MCanvas_Clicked"
+                                      NumberOfTapsRequired="1"/>
+            </GraphicsView.GestureRecognizers>
+        </GraphicsView>
+    </StackLayout>        
+    
+</ContentPage>
