@@ -19,7 +19,7 @@
                     <Color x:Key="ContrastTextColorDark">#FFF</Color>
 
                     <!-- Ligth theme colors -->
-                    <Color x:Key="BackgroundColor">#c6c2cc</Color>
+                    <Color x:Key="BackgroundColor">#e5e5e5</Color>
                     <Color x:Key="TileBackgroundColor">#ffffff</Color>
                     <Color x:Key="PrimaryColor">#bb86fc</Color>
                     <Color x:Key="TextColor">#bb86fc</Color>
@@ -74,6 +74,25 @@
                         <Setter Property="BorderColor" Value="{AppThemeBinding 
                                             Dark={StaticResource TextColorDark},
                                             Light={StaticResource TextColor}}"/>
+                    </Style>
+
+                    <!-- Bar button -->
+                    <Style x:Key="Bar" TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                                                                        Dark={StaticResource TileBackgroundColorDark},
+                                                                        Light={StaticResource TileBackgroundColor}}"/>
+                        <Setter Property="FontSize" Value="Small"/>
+                        <Setter Property="FontFamily" Value="MyMainHeavyFont"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+
+                        <Setter Property="TextColor" Value="{AppThemeBinding 
+                                                                    Dark={StaticResource TextColorDark},
+                                                                    Light={StaticResource TextColor}}"/>
+                        <Setter Property="BorderColor" Value="{AppThemeBinding 
+                                                                    Dark={StaticResource TextColorDark},
+                                                                    Light={StaticResource TextColor}}"/>
+                        <Setter Property="Margin" Value="{OnPlatform WinUI= '0',
+                                                                     Android='1'}"/>
                     </Style>
 
                 </ResourceDictionary>

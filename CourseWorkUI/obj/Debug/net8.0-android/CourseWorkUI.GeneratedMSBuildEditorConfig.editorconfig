@@ -46,20 +46,20 @@ build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.Resources.Sty
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/UI/Menues/AddMenu.xaml]
+[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/AddMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.AddMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = UI\Menues\AddMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = UI\Menues\AddMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.AddMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Menues\AddMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Menues\AddMenu.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/UI/Menues/FilesMenu.xaml]
+[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/FilesMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.FilesMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = UI\Menues\FilesMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = UI\Menues\FilesMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.FilesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Menues\FilesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Menues\FilesMenu.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/UI/Menues/PropertiesMenu.xaml]
+[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/PropertiesMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.PropertiesMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = UI\Menues\PropertiesMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = UI\Menues\PropertiesMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.PropertiesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Menues\PropertiesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Menues\PropertiesMenu.xaml

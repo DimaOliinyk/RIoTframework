@@ -20,6 +20,46 @@
             Changes the mode to the opposite (Running/Editing)
             </summary>
         </member>
+        <member name="T:CourseWorkUI.Controller.FileController">
+            <summary>
+            Fowards passed actions from View to
+            Model responsible for work with files
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.Controller.FileController.Save(System.Collections.Generic.List{CourseWorkUI.UI.TileGrid})">
+            <summary>
+            Saving to file
+            </summary>
+            <param name="grids"></param>
+        </member>
+        <member name="M:CourseWorkUI.Controller.FileController.Open(System.String,System.String)">
+            <summary>
+            Opening file with passed path and name separately
+            </summary>
+            <param name="path"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Controller.FileController.Open(System.String)">
+            <summary>
+            Opening file with full path passed
+            </summary>
+            <param name="fullpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Controller.FileController.Create(System.String)">
+            <summary>
+            Creates file with passed name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Controller.FileController.GetProjectName">
+            <summary>
+            Returns projects name
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:CourseWorkUI.MainPage.GraphicsViewDrawable">
             <summary>
             Internal class which draws all dynamic GUI
@@ -55,6 +95,105 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.BtnBottomNav_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            When any bottom nav bar button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:CourseWorkUI.Model.FileSaver">
+            <summary>
+            Performs actions on file which stores project data
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.Model.FileSaver.Save(System.String)">
+            <summary>
+            Writes to file the passed data
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:CourseWorkUI.Model.FileSaver.Open(System.String,System.String)">
+            <summary>
+            Reads from file and writes the data to string.
+            Gets the file by name and path as separate args.
+            </summary>
+            <param name="path"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Model.FileSaver.Open(System.String)">
+            <summary>
+            Reads from file and writes the data to string.
+            Gets the file full path.
+            </summary>
+            <param name="fullpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Model.FileSaver.Create(System.String)">
+            <summary>
+            Writes to file
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:CourseWorkUI.Model.FileSaver.ResetPath">
+            <summary>
+            Resets the path to default
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.Utilities.Exceptions.SinglePageException">
+            <summary>
+            Exception to be thrown by Content 
+            pages when their count is more that 1
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.Utilities.GridEncoder">
+            <summary>
+            Coverts Tiles' properties and positions and 
+            pages of Grids to string and vice versa
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.GridEncoder.Encode(System.Collections.Generic.List{CourseWorkUI.UI.TileGrid})">
+            <summary>
+            Converts list of Grids to string
+            </summary>
+            <param name="grids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.GridEncoder.Decode(System.String)">
+            <summary>
+            Convert string to list of Grids
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
+            <summary>
+            Rounds the position 
+            </summary>
+            <param name="tileSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position._RoundHelper(System.Single,System.Single)">
+            <summary>
+            Helper rounding functions
+            </summary>
+            <param name="val"></param>
+            <param name="tileSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CourseWorkUI.View.BottomBarButton">
+            <summary>
+            Creates buttons for bottom bar
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.View.BottomBarButton.CreateBarButton">
+            <summary>
+            Creates instances of buttons
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
         </member>
         <member name="T:CourseWorkUI.UI.ColorDictionary">
             <summary>
@@ -141,7 +280,13 @@
             types of Tiles
             </summary>
         </member>
-        <member name="M:CourseWorkUI.UI.Menues.AddMenu.VwCollectionView_SelectionChanged(System.Object,Microsoft.Maui.Controls.SelectionChangedEventArgs)">
+        <member name="M:CourseWorkUI.UI.Menues.AddMenu.#ctor">
+            <summary>
+            
+            </summary>
+            <exception cref="T:CourseWorkUI.Utilities.Exceptions.SinglePageException"></exception>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.AddMenu.AddTile(System.String)">
             <summary>
             Event handler for when the item 
             in the collection view is clicked
@@ -155,6 +300,13 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.#ctor(System.Collections.Generic.List{CourseWorkUI.UI.TileGrid})">
+            <summary>
+            Accepts list of Grids containing Tiles
+            </summary>
+            <param name="tileGrids"></param>
+            <exception cref="T:CourseWorkUI.Utilities.Exceptions.SinglePageException"></exception>
         </member>
         <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnOpen_Clicked(System.Object,System.EventArgs)">
             <summary>
@@ -176,6 +328,14 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.PropertiesMenu.#ctor(CourseWorkUI.UI.Tile,CourseWorkUI.UI.TileGrid)">
+            <summary>
+            
+            </summary>
+            <param name="tile"></param>
+            <param name="grid"></param>
+            <exception cref="T:CourseWorkUI.Utilities.Exceptions.SinglePageException"></exception>
         </member>
         <member name="M:CourseWorkUI.UI.Menues.PropertiesMenu.BtnDelete_Clicked(System.Object,System.EventArgs)">
             <summary>
@@ -209,6 +369,16 @@
             <returns></returns>
             <exception cref="T:System.ComponentModel.InvalidEnumArgumentException"></exception>
         </member>
+        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,System.Single,System.String)">
+            <summary>
+            Function resposible for tile creation.
+            </summary>
+            <param name="pos"></param>
+            <param name="tileSize"></param>
+            <param name="tileType"></param>
+            <returns></returns>
+            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException"></exception>
+        </member>
         <member name="T:CourseWorkUI.UI.Menues.TileTypes">
             <summary>
             Types of Tiles
@@ -219,7 +389,7 @@
             Class representing UI element Button 
             </summary>
         </member>
-        <member name="T:CourseWorkUI.UI.Tiles.CircularChart">
+        <member name="T:CourseWorkUI.UI.Tiles.Gauge">
             <summary>
             Gauge Tile
             </summary>
@@ -296,21 +466,6 @@
             Gets called when the Tile is 
             determind to have been clicked
             </summary>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
-            <summary>
-            Rounds the position 
-            </summary>
-            <param name="tileSize"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.Position._RoundHelper(System.Single,System.Single)">
-            <summary>
-            Helper rounding functions
-            </summary>
-            <param name="val"></param>
-            <param name="tileSize"></param>
-            <returns></returns>
         </member>
     </members>
 </doc>

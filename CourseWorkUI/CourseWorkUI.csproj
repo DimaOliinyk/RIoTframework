@@ -63,6 +63,11 @@
 	  <None Remove="Resources\Fonts\Tomorrow-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Tomorrow-Thin.ttf" />
 	  <None Remove="Resources\Images\file_options.png" />
+	  <None Remove="Resources\Images\icon_button.png" />
+	  <None Remove="Resources\Images\icon_gauge.png" />
+	  <None Remove="Resources\Images\icon_graph.png" />
+	  <None Remove="Resources\Images\icon_led.png" />
+	  <None Remove="Resources\Images\icon_pot.png" />
 	  <None Remove="Resources\Images\newfile.png" />
 	  <None Remove="Resources\Images\openfile.png" />
 	  <None Remove="Resources\Images\run.png" />
@@ -78,13 +83,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="UI\Menues\AddMenu.xaml">
+	  <MauiXaml Update="View\Menues\AddMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UI\Menues\FilesMenu.xaml">
+	  <MauiXaml Update="View\Menues\FilesMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="UI\Menues\PropertiesMenu.xaml">
+	  <MauiXaml Update="View\Menues\PropertiesMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

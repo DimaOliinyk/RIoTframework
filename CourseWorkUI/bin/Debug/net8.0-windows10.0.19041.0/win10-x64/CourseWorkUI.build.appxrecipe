@@ -241,6 +241,24 @@
     <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\file_options.scale-100.png">
       <PackagePath>file_options.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png">
+      <PackagePath>graph.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png">
+      <PackagePath>icon_button.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_gauge.scale-100.png">
+      <PackagePath>icon_gauge.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_graph.scale-100.png">
+      <PackagePath>icon_graph.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_led.scale-100.png">
+      <PackagePath>icon_led.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_pot.scale-100.png">
+      <PackagePath>icon_pot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\newfile.scale-100.png">
       <PackagePath>newfile.scale-100.png</PackagePath>
     </AppxPackagedFile>

@@ -5,65 +5,106 @@
     
     <!-- Page's header -->
     <Shell.TitleView>
-        <Grid>            
+        <Grid>
             <!-- App name and nav bar buttons -->
             <HorizontalStackLayout VerticalOptions="CenterAndExpand"
-                                   Spacing="2">
+                                   Spacing="2"
+                                   Margin="7,0,0,0">
 
                 <!-- Nav bar button -->
                 <ImageButton x:Name="BtnNavBar"
                              Source="file_options.png" 
                              MaximumWidthRequest="30"
+                             MinimumWidthRequest="30"
+                             Margin="{OnPlatform 
+                                        WinUI='0,0,0,0', 
+                                        Android='0,5,0,0'}"
+                             BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark}, 
+                                        Light={StaticResource PrimaryColor}}"
                              Clicked="BtnNavBar_Clicked"/>
 
                 <!-- Title of the project -->
                 <Label x:Name="LblProjectsName"
                        Text="RIoT"
-                       Margin="40,0,0,0"
+                       Margin="20,0,0,0"    
                        FontFamily="MyMainMediumFont"
                        FontSize="36"
-                       MaximumWidthRequest="200"
+                       MaximumWidthRequest="400"
                        HorizontalOptions="Start"
                        TextColor="Black"/>
-
+                
             </HorizontalStackLayout>
             <!-- Settings and Run/Pause buttons -->
             <HorizontalStackLayout HorizontalOptions="End"
                                    Spacing="20"
-                                   Margin="10">
-                
+                                   Margin="5,5,15,5">
+
                 <!-- Settings button -->
                 <ImageButton x:Name="Btnsettings" 
                              Source="settings.png"
-                             MaximumWidthRequest="30"/>
+                             MaximumWidthRequest="30"
+                             MinimumWidthRequest="30"
+                             BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark}, 
+                                        Light={StaticResource PrimaryColor}}"/>
 
                 <!-- Run/Pause button -->
                 <ImageButton x:Name="BtnRunPause"
                              Source="run.png"
                              MaximumWidthRequest="30"
+                             MinimumWidthRequest="30"
+                             BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark}, 
+                                        Light={StaticResource PrimaryColor}}"
                              Clicked="BtnRunPause_Clicked"/>
 
             </HorizontalStackLayout>
         </Grid>
     </Shell.TitleView>
 
-    <!-- Main canvas -->
-    <StackLayout x:Name="MainStackLayout"
-                 BackgroundColor="{AppThemeBinding 
-                                        Dark={StaticResource BackgroundColorDark}, 
-                                        Light={StaticResource BackgroundColor}}"
-                 HorizontalOptions="FillAndExpand"                 
-                 Padding="12">
-        <!-- Canvas -->
-        <GraphicsView x:Name="Layout"
-                      HorizontalOptions="FillAndExpand"
-				      VerticalOptions="FillAndExpand">
-            <!-- Clicking canvas event -->
-            <GraphicsView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="MCanvas_Clicked"
-                                      NumberOfTapsRequired="1"/>
-            </GraphicsView.GestureRecognizers>
-        </GraphicsView>
-    </StackLayout>        
-    
+    <Grid>
+        <!-- Main canvas -->
+        <StackLayout x:Name="MainStackLayout"
+                     BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark}, 
+                                            Light={StaticResource BackgroundColor}}"
+                     HorizontalOptions="FillAndExpand"                 
+                     Padding="12">
+            <!-- Canvas -->
+            <GraphicsView x:Name="Layout"
+                          HorizontalOptions="FillAndExpand"
+	    			      VerticalOptions="FillAndExpand">
+                <!-- Clicking canvas event -->
+                <GraphicsView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="MCanvas_Clicked"
+                                          NumberOfTapsRequired="1"/>
+                </GraphicsView.GestureRecognizers>
+            </GraphicsView>
+        </StackLayout>
+
+        <!-- Bottom Nav bar -->
+        <HorizontalStackLayout VerticalOptions="End"
+                               HorizontalOptions="CenterAndExpand"
+                               Margin="5"
+                               Spacing="3"
+                               x:Name="BottomBar">
+            
+            <!-- Add page button -->
+            <Button x:Name="BtnAddPage"
+                    Text="+"
+                    Style="{StaticResource Bar}"
+                    Clicked="BtnAddPage_Clicked"/>
+            <!-- Default page -->
+            <Button x:Name="BtnFirstPage"
+                    Text="Page1"
+                    Style="{StaticResource Bar}"
+                    IsVisible="False">
+                <Button.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BtnBottomNav_Clicked"/>
+                </Button.GestureRecognizers>
+            </Button>
+
+        </HorizontalStackLayout>
+    </Grid>
 </ContentPage>

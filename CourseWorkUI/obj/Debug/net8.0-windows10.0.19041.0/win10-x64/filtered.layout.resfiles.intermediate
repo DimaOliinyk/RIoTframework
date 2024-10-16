@@ -60,6 +60,12 @@ dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
 file_options.scale-100.png
+graph.scale-100.png
+icon_button.scale-100.png
+icon_gauge.scale-100.png
+icon_graph.scale-100.png
+icon_led.scale-100.png
+icon_pot.scale-100.png
 newfile.scale-100.png
 openfile.scale-100.png
 run.scale-100.png

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.AddMenu"
+             Title="AddMenu">
+
+    <Grid BackgroundColor="{AppThemeBinding 
+                                Dark={StaticResource BackgroundColorDark},
+                                Light={StaticResource BackgroundColor}}">
+        <Grid VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title of the menu -->
+            <Label HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Padding="16,16"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   TextColor="Black"
+                   Text="Add Tile"
+                   FontSize="Medium"
+                   FontFamily="MyMainMediumFont"
+                   BackgroundColor="{AppThemeBinding 
+                                        Dark={StaticResource PrimaryColorDark},
+                                        Light={StaticResource PrimaryColor}}"/>
+
+            <ScrollView Grid.Row="1" 
+                        Margin="0,0,0,30">
+                <VerticalStackLayout x:Name="VSItemList"
+                                     VerticalOptions="CenterAndExpand"
+                                     Margin="0,5,0,20"
+                                     Spacing="5">
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+
+        <!-- Bottom UI elements -->
+        <ScrollView VerticalOptions="EndAndExpand">
+            <VerticalStackLayout HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}">
+
+                <Grid VerticalOptions="EndAndExpand"
+                      Padding="0,0,2,0"
+                      BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource BackgroundColorDark},
+                                            Light={StaticResource BackgroundColor}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Cancel button -->
+                    <Button x:Name="BtnCancel"
+                            VerticalOptions="EndAndExpand"
+                            Text="Cancel"                            
+                            Clicked="BtnCancel_Clicked"
+                            Style="{StaticResource CancelButton}"/>
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

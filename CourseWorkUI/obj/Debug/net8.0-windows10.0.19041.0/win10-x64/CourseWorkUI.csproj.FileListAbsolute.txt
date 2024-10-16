@@ -384,3 +384,9 @@ C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10
 C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_led.scale-100.png
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_gauge.scale-100.png
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_graph.scale-100.png
+C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_pot.scale-100.png

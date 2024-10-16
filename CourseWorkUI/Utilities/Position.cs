@@ -1,4 +1,6 @@
-﻿namespace CourseWorkUI.Utilities;
+﻿using CourseWorkUI.UI;
+
+namespace CourseWorkUI.Utilities;
 
 public class Position
 {
@@ -62,5 +64,18 @@ public class Position
         {
             return (this == (Position)obj);
         }
+    }
+
+    public static Position Parse(string val) 
+    {
+        var coordinates = new int[2];
+        int i = 0;
+        foreach (var coord in val.Split(';')) 
+        {
+            coordinates[i++] = int.Parse(coord);
+            if (i >= 2)
+                break;
+        }
+        return new Position(coordinates[0], coordinates[1]);
     }
 }
