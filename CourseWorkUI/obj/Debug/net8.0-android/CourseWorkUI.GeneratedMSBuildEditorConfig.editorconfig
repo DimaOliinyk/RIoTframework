@@ -12,54 +12,54 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseWorkUI
-build_property.ProjectDir = C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\
+build_property.ProjectDir = C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/App.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/AppShell.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/MainPage.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/Resources/Styles/Colors.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/Resources/Styles/Styles.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/AddMenu.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/AddMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.AddMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Menues\AddMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Menues\AddMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.AddMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\AddMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\AddMenu.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/FilesMenu.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/FilesMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.FilesMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Menues\FilesMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Menues\FilesMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.FilesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\FilesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\FilesMenu.xaml
 
-[C:/Users/dolii/source/repos/CourseWorkUI/CourseWorkUI/View/Menues/PropertiesMenu.xaml]
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/PropertiesMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.View.Menues.PropertiesMenu.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Menues\PropertiesMenu.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Menues\PropertiesMenu.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.PropertiesMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\PropertiesMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\PropertiesMenu.xaml

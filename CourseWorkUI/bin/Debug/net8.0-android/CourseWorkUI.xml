@@ -60,18 +60,18 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:CourseWorkUI.Controller.FileController.SetProjectName(System.String)">
+            <summary>
+            Sets the projects name when meeting the requirements.
+            Returns false if requirements are not met.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
         <member name="T:CourseWorkUI.MainPage.GraphicsViewDrawable">
             <summary>
             Internal class which draws all dynamic GUI
             </summary>
-        </member>
-        <member name="M:CourseWorkUI.MainPage.MCanvas_Clicked(System.Object,System.EventArgs)">
-            <summary>
-            Event handler for when 
-            the canvas is clicked
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
         </member>
         <member name="M:CourseWorkUI.MainPage.BtnRunPause_Clicked(System.Object,System.EventArgs)">
             <summary>
@@ -87,11 +87,26 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:CourseWorkUI.MainPage.MCanvas_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when 
+            the canvas is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="M:CourseWorkUI.MainPage.HandleModalPopping(System.Object,System.EventArgs)">
             <summary>
             Event handler for when any page 
             (PropertiesMenu, AddMenu, FilesMenu)
             gets closed
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.BtnAddPage_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Adds new page to project
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -102,6 +117,18 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.OnSwiped(System.Object,Microsoft.Maui.Controls.SwipedEventArgs)">
+            <summary>
+            When page button is swiped it gets cleared
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.MainPage.HandleBottomBtnCreation">
+            <summary>
+            Creates buttons at hte bottom nav bar
+            </summary>
         </member>
         <member name="T:CourseWorkUI.Model.FileSaver">
             <summary>
@@ -141,47 +168,6 @@
             <summary>
             Resets the path to default
             </summary>
-        </member>
-        <member name="T:CourseWorkUI.Utilities.Exceptions.SinglePageException">
-            <summary>
-            Exception to be thrown by Content 
-            pages when their count is more that 1
-            </summary>
-        </member>
-        <member name="T:CourseWorkUI.Utilities.GridEncoder">
-            <summary>
-            Coverts Tiles' properties and positions and 
-            pages of Grids to string and vice versa
-            </summary>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.GridEncoder.Encode(System.Collections.Generic.List{CourseWorkUI.UI.TileGrid})">
-            <summary>
-            Converts list of Grids to string
-            </summary>
-            <param name="grids"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.GridEncoder.Decode(System.String)">
-            <summary>
-            Convert string to list of Grids
-            </summary>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
-            <summary>
-            Rounds the position 
-            </summary>
-            <param name="tileSize"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CourseWorkUI.Utilities.Position._RoundHelper(System.Single,System.Single)">
-            <summary>
-            Helper rounding functions
-            </summary>
-            <param name="val"></param>
-            <param name="tileSize"></param>
-            <returns></returns>
         </member>
         <member name="T:CourseWorkUI.View.BottomBarButton">
             <summary>
@@ -261,9 +247,9 @@
             Deletes all Tiles
             </summary>
         </member>
-        <member name="M:CourseWorkUI.UI.TileGrid.CheckPosition(CourseWorkUI.UI.Tile,CourseWorkUI.Utilities.Position)">
+        <member name="M:CourseWorkUI.UI.TileGrid.IsOccupied(CourseWorkUI.UI.Tile,CourseWorkUI.Utilities.Position)">
             <summary>
-            Helper function to check position
+            Helper function to check whether specified position or position around is occupied
             </summary>
             <param name="tile"></param>
             <param name="pos"></param>
@@ -285,6 +271,14 @@
             
             </summary>
             <exception cref="T:CourseWorkUI.Utilities.Exceptions.SinglePageException"></exception>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.AddMenu.CreateItem(System.String,System.String)">
+            <summary>
+            Creates Item to be displayed
+            </summary>
+            <param name="itemName"></param>
+            <param name="imagePath"></param>
+            <returns></returns>
         </member>
         <member name="M:CourseWorkUI.UI.Menues.AddMenu.AddTile(System.String)">
             <summary>
@@ -322,12 +316,25 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnSave_Clicked(System.Object,System.EventArgs)">
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnSave_ClickedAsync(System.Object,System.EventArgs)">
             <summary>
             Event handler for Saving Project button
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.BtnCancel_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Cancel button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CourseWorkUI.UI.Menues.FilesMenu.PropmptProjectNameAsync">
+            <summary>
+            Prompts the project's name with checking. Returns correct naem
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:CourseWorkUI.UI.Menues.PropertiesMenu.#ctor(CourseWorkUI.UI.Tile,CourseWorkUI.UI.TileGrid)">
             <summary>
@@ -359,22 +366,20 @@
             Class resposible for creation of Tiles
             </summary>
         </member>
-        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,System.Single,CourseWorkUI.UI.Menues.TileTypes)">
+        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,CourseWorkUI.UI.Menues.TileTypes)">
             <summary>
             Function resposible for tile creation.
             </summary>
             <param name="pos"></param>
-            <param name="tileSize"></param>
             <param name="tileType"></param>
             <returns></returns>
             <exception cref="T:System.ComponentModel.InvalidEnumArgumentException"></exception>
         </member>
-        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,System.Single,System.String)">
+        <member name="M:CourseWorkUI.UI.Menues.TileFactory.CreateTile(CourseWorkUI.Utilities.Position,System.String)">
             <summary>
             Function resposible for tile creation.
             </summary>
             <param name="pos"></param>
-            <param name="tileSize"></param>
             <param name="tileType"></param>
             <returns></returns>
             <exception cref="T:System.ComponentModel.InvalidEnumArgumentException"></exception>
@@ -466,6 +471,74 @@
             Gets called when the Tile is 
             determind to have been clicked
             </summary>
+        </member>
+        <member name="T:CourseWorkUI.Utilities.CircularArray`1">
+            <summary>
+            Container where elements are added in 
+            cycle and read starting from recently
+            added
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircularArray`1.AddValue(`0)">
+            <summary>
+            Adds new value by replacing the elemnet 
+            that was added the earliest
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircularArray`1.Clone">
+            <summary>
+            Clones the CircularArray
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CourseWorkUI.Utilities.CircularArray`1.Count">
+            <summary>
+            Returns count of elements
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.Utilities.Exceptions.SinglePageException">
+            <summary>
+            Exception to be thrown by Content 
+            pages when their count is more that 1
+            </summary>
+        </member>
+        <member name="T:CourseWorkUI.Utilities.GridEncoder">
+            <summary>
+            Coverts Tiles' properties and positions and 
+            pages of Grids to string and vice versa
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.GridEncoder.Encode(System.Collections.Generic.List{CourseWorkUI.UI.TileGrid})">
+            <summary>
+            Converts list of Grids to string
+            </summary>
+            <param name="grids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.GridEncoder.Decode(System.String)">
+            <summary>
+            Convert string to list of Grids
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
+            <summary>
+            Rounds the position 
+            </summary>
+            <param name="tileSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.Position._RoundHelper(System.Single,System.Single)">
+            <summary>
+            Helper rounding functions
+            </summary>
+            <param name="val"></param>
+            <param name="tileSize"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

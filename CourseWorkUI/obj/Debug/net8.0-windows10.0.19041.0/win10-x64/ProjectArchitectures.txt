@@ -1,1 +1,1 @@
-C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\CourseWorkUI.csproj;x64
+C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\CourseWorkUI.csproj;x64

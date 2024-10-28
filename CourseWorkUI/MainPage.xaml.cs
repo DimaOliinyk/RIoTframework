@@ -174,7 +174,7 @@ public partial class MainPage : ContentPage
             }
 
             // If parsing successful - creates Tile
-            var tile = TileFactory.CreateTile(Position, Tile.Size, tileT);
+            var tile = TileFactory.CreateTile(Position, tileT);
 
             // Checks for whether tile can be added
             var result = _currentGrid.CanAddTile(tile);
@@ -214,7 +214,7 @@ public partial class MainPage : ContentPage
         try
         {
             var button = BottomBarButton.CreateBarButton();
-            BtnFirstPage.IsVisible = (BottomBarButton.Count != 1) ? true : false;      // TODO: Access counter and check wheteher one page has to be shown
+            BtnFirstPage.IsVisible = (BottomBarButton.Count != 1) ? true : false;
 
             TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += BtnBottomNav_Clicked;

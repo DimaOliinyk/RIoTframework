@@ -77,7 +77,7 @@ public static class GridEncoder
                 string tileType = subVal.Split(',')[1];                // Reads Tile's type
 
                 // Creates Tile by specified type (string) and adds it
-                var currTile = TileFactory.CreateTile(pos, Tile.Size, tileType);
+                var currTile = TileFactory.CreateTile(pos, tileType);
                 currentGrid.AddTile(currTile);
 
                 var token = subVal.Split(',')[2..];    // Tokenizes rest of page

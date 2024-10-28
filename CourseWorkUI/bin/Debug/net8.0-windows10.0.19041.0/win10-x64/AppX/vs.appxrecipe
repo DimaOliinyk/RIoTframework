@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.courseworkui</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>14C011F245D2B321C89BF46A98F4766461889B14939064A92F651FBAC4546D55</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.courseworkui_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.courseworkui_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,352 +26,352 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-16T21:38:00.857</Modified>
+      <Modified>2024-10-24T06:22:31.408</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-15T20:56:27.007</Modified>
+      <Modified>2024-10-18T21:04:52.440</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.runtimeconfig.json">
       <PackagePath>CourseWorkUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-29T17:58:35.134</Modified>
+      <Modified>2024-10-18T20:28:26.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.dll">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.dll">
       <PackagePath>CourseWorkUI.dll</PackagePath>
-      <Modified>2024-10-16T21:38:00.087</Modified>
+      <Modified>2024-10-24T06:22:30.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CourseWorkUI.exe</PackagePath>
-      <Modified>2024-10-16T21:38:00.123</Modified>
+      <Modified>2024-10-24T06:22:30.625</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2024-09-15T15:04:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2024-09-15T15:05:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2024-09-15T15:05:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2024-09-15T15:05:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2024-09-15T15:05:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2024-09-15T15:05:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2024-09-15T15:04:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2024-09-15T15:04:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Saira_Condensed-Light.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Saira_Condensed-Light.ttf">
       <PackagePath>Saira_Condensed-Light.ttf</PackagePath>
       <Modified>2024-09-21T19:52:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Saira_Condensed-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Saira_Condensed-Regular.ttf">
       <PackagePath>Saira_Condensed-Regular.ttf</PackagePath>
       <Modified>2024-09-21T19:52:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Black.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Black.ttf">
       <PackagePath>Tomorrow-Black.ttf</PackagePath>
       <Modified>2024-09-21T10:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-BlackItalic.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-BlackItalic.ttf">
       <PackagePath>Tomorrow-BlackItalic.ttf</PackagePath>
       <Modified>2024-09-21T10:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Medium.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Medium.ttf">
       <PackagePath>Tomorrow-Medium.ttf</PackagePath>
       <Modified>2024-09-21T10:21:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Regular.ttf">
       <PackagePath>Tomorrow-Regular.ttf</PackagePath>
       <Modified>2024-09-21T10:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Thin.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-Thin.ttf">
       <PackagePath>Tomorrow-Thin.ttf</PackagePath>
       <Modified>2024-09-21T10:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-ThinItalic.ttf">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tomorrow-ThinItalic.ttf">
       <PackagePath>Tomorrow-ThinItalic.ttf</PackagePath>
       <Modified>2024-09-21T10:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
       <Modified>2024-10-15T20:21:43.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
       <Modified>2024-10-15T20:21:43.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2024-10-15T20:21:43.271</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\file_options.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\file_options.scale-100.png">
       <PackagePath>file_options.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png">
       <PackagePath>graph.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png">
       <PackagePath>icon_button.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_gauge.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_gauge.scale-100.png">
       <PackagePath>icon_gauge.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_graph.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_graph.scale-100.png">
       <PackagePath>icon_graph.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_led.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_led.scale-100.png">
       <PackagePath>icon_led.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_pot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_pot.scale-100.png">
       <PackagePath>icon_pot.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\newfile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\newfile.scale-100.png">
       <PackagePath>newfile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\openfile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\openfile.scale-100.png">
       <PackagePath>openfile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-100.png">
       <PackagePath>run.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\savefile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\savefile.scale-100.png">
       <PackagePath>savefile.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png">
       <PackagePath>settings.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop.scale-100.png">
       <PackagePath>stop.scale-100.png</PackagePath>
       <Modified>2024-10-15T20:21:43.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dolii\source\repos\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.deps.json">
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.deps.json">
       <PackagePath>CourseWorkUI.deps.json</PackagePath>
-      <Modified>2024-10-15T20:56:26.870</Modified>
+      <Modified>2024-10-18T21:04:52.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

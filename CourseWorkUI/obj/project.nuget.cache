@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1G3bl4Jge5Q=",
+  "dgSpecHash": "hycLxxFqHOM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dolii\\source\\repos\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
+  "projectFilePath": "C:\\Users\\dolii\\OneDrive\\Desktop\\Code\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dolii\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\dolii\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

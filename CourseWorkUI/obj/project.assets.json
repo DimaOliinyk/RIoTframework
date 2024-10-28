@@ -33055,11 +33055,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dolii\\source\\repos\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
+      "projectUniqueName": "C:\\Users\\dolii\\OneDrive\\Desktop\\Code\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
       "projectName": "CourseWorkUI",
-      "projectPath": "C:\\Users\\dolii\\source\\repos\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
+      "projectPath": "C:\\Users\\dolii\\OneDrive\\Desktop\\Code\\CourseWorkUI\\CourseWorkUI\\CourseWorkUI.csproj",
       "packagesPath": "C:\\Users\\dolii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dolii\\source\\repos\\CourseWorkUI\\CourseWorkUI\\obj\\",
+      "outputPath": "C:\\Users\\dolii\\OneDrive\\Desktop\\Code\\CourseWorkUI\\CourseWorkUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
