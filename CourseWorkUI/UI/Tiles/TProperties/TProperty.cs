@@ -5,7 +5,7 @@
 /// </summary>
 public abstract class TProperty
 {
-    public string Value { get; set; }   // Value which TProperty holds
+    public virtual string Value { get; set; }   // Value which TProperty holds
 
     protected TProperty(string value)
     {

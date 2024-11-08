@@ -87,6 +87,13 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:CourseWorkUI.MainPage.Btnsettings_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Opens Settings Page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="M:CourseWorkUI.MainPage.MCanvas_Clicked(System.Object,System.EventArgs)">
             <summary>
             Event handler for when 
@@ -285,8 +292,6 @@
             Event handler for when the item 
             in the collection view is clicked
             </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
         </member>
         <member name="M:CourseWorkUI.UI.Menues.AddMenu.BtnCancel_Clicked(System.Object,System.EventArgs)">
             <summary>

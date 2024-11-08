@@ -2,8 +2,10 @@
 using Android.Service.QuickSettings;
 using Android.Systems;
 using Android.Views;
+
 #endif
 using CourseWorkUI.Utilities;
+using CourseWorkUI.UI.Menues;
 
 namespace CourseWorkUI.UI;
 
@@ -140,6 +142,7 @@ public class TileGrid
             // if specified Tile is found it gets removed
             if (tile.Position == newTile.Position)
             {
+                TileFactory.AvailablePins.Add(tile.GetPin());
                 Tiles.Remove(tile);
                 break;
             }
@@ -197,7 +200,14 @@ public class TileGrid
     /// <summary>
     /// Deletes all Tiles
     /// </summary>
-    public void Clear() => Tiles.Clear();
+    public void Clear() 
+    {
+        foreach (var tile in Tiles) 
+        {
+            TileFactory.AvailablePins.Add(tile.GetPin());
+        }
+        Tiles.Clear();
+    }
 
     /// <summary>
     /// Helper function to check whether specified position or position around is occupied

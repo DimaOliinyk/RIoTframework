@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.SettingsMenu"
+             Title="SettingsMenu">
+    <Grid BackgroundColor="{AppThemeBinding 
+                                Dark={StaticResource BackgroundColorDark},
+                                Light={StaticResource BackgroundColor}}">
+        <!-- Page title -->
+        <Grid VerticalOptions="StartAndExpand">
+            <Label HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Padding="16,16"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Text="Settings"
+                   FontSize="Medium"
+                   FontFamily="MyMainMediumFont"
+                   TextColor="Black"
+                   BackgroundColor="{AppThemeBinding 
+                                            Dark={StaticResource PrimaryColorDark},
+                                            Light={StaticResource PrimaryColor}}"/>
+        </Grid>
+
+        <!-- Properties get added here at runtime -->
+        <ScrollView VerticalOptions="Start"
+                    Margin="20,66,20,5">
+            <Grid x:Name="GrdProperties"
+                      Margin="2,2,2,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ScrollView>
+
+            <!-- Bottom Bar -->
+        <Grid VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- Save button -->
+            <Button x:Name="BtnSave"
+                    Text="Save"
+                    Grid.Column="0"
+                    Clicked="BtnSave_Clicked"
+                    Style="{StaticResource SaveBtn}"/>
+            <!-- Cacel button -->
+            <Button x:Name="BtnCancel"
+                    Text="Cancel"
+                    Grid.Column="1" 
+                    Clicked="BtnCancel_Clicked"
+                    Style="{StaticResource CancelButton}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

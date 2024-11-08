@@ -63,3 +63,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.PropertiesMenu.xaml
 build_metadata.AdditionalFiles.TargetPath = UI\Menues\PropertiesMenu.xaml
 build_metadata.AdditionalFiles.RelativePath = UI\Menues\PropertiesMenu.xaml
+
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/SettingsMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.SettingsMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\SettingsMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\SettingsMenu.xaml

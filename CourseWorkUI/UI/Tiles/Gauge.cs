@@ -1,4 +1,5 @@
-﻿using CourseWorkUI.UI.Tiles.TProperties;
+﻿using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
 using System.Diagnostics;
@@ -11,9 +12,10 @@ namespace CourseWorkUI.UI.Tiles;
 /// <summary>
 /// Gauge Tile
 /// </summary>
-public class Gauge : Tile
+public class Gauge : Tile, IOutput
 {
     private TProperty _name;        // Name property
+    private TPropertyPin _pin;
     private TPropertyValue<float> _min;    // Min value property
     private TPropertyValue<float> _max;    // Max value property
     private double _value;          // Value that will be passed to Chart
@@ -21,11 +23,12 @@ public class Gauge : Tile
     public Gauge(Position pos) : base(pos, Tile.Size, Tile.Size)
     {
         _name = new TPropertyName("Pie");
+        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
         _min = new TPropertyValue<float>("0", "Min");
         _max = new TPropertyValue<float>("255", "Max");
-        
+
         Properties.Add(_name);
-        Properties.Add(new TPropertyPin(""));
+        Properties.Add(_pin);
         Properties.Add(_min);
         Properties.Add(_max);
 
@@ -68,4 +71,8 @@ public class Gauge : Tile
 
         DrawName(canvas, dirtyRect, _name.Value);
     }
+
+    public override int GetPin() => _pin.GetNumber();
+
+    public void SetValue(int value) => _value = value;
 }

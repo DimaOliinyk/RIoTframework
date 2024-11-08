@@ -63,7 +63,6 @@ public partial class PropertiesMenu : ContentPage
     /// <param name="e"></param>
     private void BtnSave_Clicked(object sender, EventArgs e)
     {
-        // TODO: Check for correct pin number
         for (int i = 0; i < _entries.Count; i++)
         {
             // checks whether passed strings are not null
@@ -80,7 +79,7 @@ public partial class PropertiesMenu : ContentPage
 
             if (!_tile.Properties[i].IsCorrect()) // checks whether properties are correct
             {
-                DisplayAlert("Error", "Values cannot be empty", "OK");
+                DisplayAlert("Error", $"Wrong value at row {i+1}\n - Values cannot be empty;\n - Pin numbers have to be numeric;", "OK");
                 return;
             }
         }

@@ -11601,10 +11601,10 @@ public final class R {
     public static final int notification_tile_bg=0x7f0700e8;
     public static final int notify_panel_notification_icon_bg=0x7f0700e9;
     public static final int openfile=0x7f0700ea;
-    public static final int run=0x7f0700eb;
-    public static final int savefile=0x7f0700ec;
-    public static final int settings=0x7f0700ed;
-    public static final int splash=0x7f0700ee;
+    public static final int riot_splash=0x7f0700eb;
+    public static final int run=0x7f0700ec;
+    public static final int savefile=0x7f0700ed;
+    public static final int settings=0x7f0700ee;
     public static final int stop=0x7f0700ef;
     public static final int test_level_drawable=0x7f0700f0;
     public static final int tooltip_frame_dark=0x7f0700f1;
@@ -12344,10 +12344,10 @@ public final class R {
     public static final int toolbar=0x7f0b0071;
   }
   public static final class mipmap {
-    public static final int appicon=0x7f0d0000;
-    public static final int appicon_background=0x7f0d0001;
-    public static final int appicon_foreground=0x7f0d0002;
-    public static final int appicon_round=0x7f0d0003;
+    public static final int riot_icon=0x7f0d0000;
+    public static final int riot_icon_background=0x7f0d0001;
+    public static final int riot_icon_foreground=0x7f0d0002;
+    public static final int riot_icon_round=0x7f0d0003;
   }
   public static final class plurals {
     public static final int mtrl_badge_content_description=0x7f0e0000;

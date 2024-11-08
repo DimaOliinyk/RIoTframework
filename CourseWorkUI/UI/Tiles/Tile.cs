@@ -1,4 +1,5 @@
-﻿using CourseWorkUI.UI.Tiles.TProperties;
+﻿using CourseWorkUI.Model;
+using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.Utilities;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Graphics.Text;
@@ -85,4 +86,6 @@ public abstract class Tile
     /// </summary>
     public virtual void Clicked() { }
     public virtual void Clicked(Position pos) { }
+
+    public abstract int GetPin();
 }

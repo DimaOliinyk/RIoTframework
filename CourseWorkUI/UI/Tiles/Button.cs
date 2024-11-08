@@ -1,4 +1,5 @@
-﻿using CourseWorkUI.UI.Tiles.TProperties;
+﻿using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
 using Font = Microsoft.Maui.Graphics.Font;
@@ -8,16 +9,18 @@ namespace CourseWorkUI.UI.Tiles;
 /// <summary>
 /// Class representing UI element Button 
 /// </summary>
-class Button : Tile
+class Button : Tile, IInput
 {
     private TPropertyName _name;    // Name of the Tile to be displayed
+    private TPropertyPin _pin;
     public bool ButtonIsOn { get; private set; } = false;    // Current state of the button 
 
     public Button(Position pos) : base(pos, Tile.Size, Tile.Size)
     {
         _name = new TPropertyName("BTN");
+        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
         Properties.Add(_name);
-        Properties.Add(new TPropertyPin(""));
+        Properties.Add(_pin);
     }
 
     protected override void DrawElementOverridable(ICanvas canvas, RectF dirtyRect)
@@ -60,4 +63,8 @@ class Button : Tile
 
     public override void Clicked() => ButtonIsOn = !ButtonIsOn;  // change current button state
     public override void Clicked(Position pos) => Clicked();
+
+    public override int GetPin() => _pin.GetNumber();
+
+    public int GetInputValue() => ButtonIsOn ? 255 : 0;
 }

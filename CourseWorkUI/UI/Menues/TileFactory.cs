@@ -10,6 +10,32 @@ namespace CourseWorkUI.UI.Menues;
 /// </summary>
 public static class TileFactory
 {
+    public static SortedSet<int> AvailablePins { get; private set; } = new();
+    private static int _numOfPins = 13;
+    public static int MaxNumberOfPins { get => _numOfPins; }
+
+    public static int GetAvailablePin() 
+    {
+        int res;
+        if(AvailablePins.Count != 0)
+        { 
+            res = AvailablePins.First();
+            AvailablePins.Remove(res);
+        }
+        else 
+        {
+            res = ++_numOfPins;
+        }
+        return res;
+    }
+    static TileFactory()
+    {
+        for (int i = 0; i < _numOfPins; i++) 
+        {
+            AvailablePins.Add(i);
+        }
+    }
+
     /// <summary>
     /// Function resposible for tile creation.
     /// </summary>
@@ -21,11 +47,11 @@ public static class TileFactory
     {
         return tileType switch
         {
-            TileTypes.BUTTON    => new Tiles.Button(pos),
-            TileTypes.GRAPH     => new Graph(pos),
-            TileTypes.LED       => new Led(pos),
-            TileTypes.GAUGE     => new Gauge(pos),
-            TileTypes.POT     => new Pot(pos),
+            TileTypes.BUTTON => new Tiles.Button(pos),
+            TileTypes.GRAPH  => new Graph(pos),
+            TileTypes.LED    => new Led(pos),
+            TileTypes.GAUGE  => new Gauge(pos),
+            TileTypes.POT    => new Pot(pos),
             _ => throw new InvalidEnumArgumentException("Wrong Tile type"),
         };
     }

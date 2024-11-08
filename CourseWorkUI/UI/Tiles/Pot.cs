@@ -1,4 +1,7 @@
-﻿using CourseWorkUI.UI;
+﻿using CourseWorkUI.Model;
+using CourseWorkUI.UI;
+using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Tiles;
 using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
@@ -7,9 +10,10 @@ using Font = Microsoft.Maui.Graphics.Font;
 
 namespace CourseWorkUI.View.Tiles;
 
-public class Pot : Tile
+public class Pot : Tile, IInput
 {
     private TPropertyName _name;
+    private TPropertyPin _pin;
     private TPropertyValue<float> _min;    // Min value property
     private TPropertyValue<float> _max;    // Max value property
     private TPropertyState _isSimple;
@@ -21,12 +25,13 @@ public class Pot : Tile
     public Pot(Position pos) : base(pos, 2*Tile.Size, Tile.Size)
     {
         _name = new TPropertyName("Pot");
+        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
         _min = new TPropertyValue<float>("0", "Min");
         _max = new TPropertyValue<float>("255", "Max");
         _isSimple = new TPropertyState("Simplify");
 
         Properties.Add(_name);
-        Properties.Add(new TPropertyPin(""));
+        Properties.Add(_pin);
         Properties.Add(_min);
         Properties.Add(_max);
         Properties.Add(_isSimple);
@@ -101,5 +106,19 @@ public class Pot : Tile
     public override void Clicked(Position pos)
     {
         _value = (pos.X - Position.X) / Width * (_max.GetNumber() - _min.GetNumber());
+    }
+
+    public override int GetPin() => _pin.GetNumber();
+
+    public int GetInputValue() 
+    {
+        try
+        {
+            return (int)_value;
+        }
+        catch (Exception )
+        {
+            return 0;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CourseWorkUI.UI.Tiles.TProperties;
+﻿using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
 using Font = Microsoft.Maui.Graphics.Font;
@@ -8,18 +9,19 @@ namespace CourseWorkUI.UI.Tiles;
 /// <summary>
 /// Light emitting diod as Tile
 /// </summary>
-class Led : Tile
+class Led : Tile, IOutput
 {
     private TProperty _name;
-
+    private TPropertyPin _pin;
     public bool OnState { get; private set; } = false;
 
     public Led(Position pos) : base(pos, Tile.Size, Tile.Size)
     {
         _name = new TPropertyName("LED");
+        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
 
         Properties.Add(_name);
-        Properties.Add(new TPropertyPin(""));
+        Properties.Add(_pin);
     }
 
     protected override void DrawElementOverridable(ICanvas canvas, RectF dirtyRect)
@@ -62,4 +64,10 @@ class Led : Tile
     }
 
     public void ChangeState() => OnState = !OnState;    // Change led state
+    public override int GetPin() => _pin.GetNumber();
+
+    public void SetValue(int value) 
+    {
+        OnState = (value == 0) ? false : true;
+    }
 }

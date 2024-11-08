@@ -1,4 +1,6 @@
-﻿namespace CourseWorkUI
+﻿using CourseWorkUI.Controller;
+
+namespace CourseWorkUI
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         static public float WindowWidth { get; private set; } = 360; 
         static public float WindowHeight { get; private set; } = 800;
 #endif
-
+        
         public App()
         {
             InitializeComponent();

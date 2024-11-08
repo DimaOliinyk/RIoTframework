@@ -1,6 +1,7 @@
 ﻿using CourseWorkUI.Controller;
 using CourseWorkUI.UI;
 using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Tiles;
 using CourseWorkUI.Utilities;
 using CourseWorkUI.Utilities.Exceptions;
 using CourseWorkUI.View;
@@ -66,16 +67,29 @@ public partial class MainPage : ContentPage
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void BtnRunPause_Clicked(object sender, EventArgs e)
+    private async void BtnRunPause_Clicked(object sender, EventArgs e)
     {
-        //TODO: Check for correct pin number in all Tiles at runtime and then show as errors
+        if (!WIFIProperties.TransferDataAndCheck()) 
+        {
+            await DisplayAlert("","Cannot connect to device, wrong values in settings found", "OK");
+            return;
+        }
+
+        // TODO: Try to connect
+        // When connected try to get values from server and assign them to correct pin. refresh canvas 
+        // When input detected, call send value on appropriate tile
+
+
         AppState.Change();
+
         if (AppState.IsRunning)     // if the app is running
         {
+            CircuitController.PrepareData(tileGrids);
             BtnRunPause.Source = ImageSource.FromFile("stop.png");
             MainStackLayout.BackgroundColor = ColorDictionary.TileBackground;
             BtnNavBar.IsVisible = false;
             BtnAddPage.IsVisible = false;
+            Btnsettings.IsVisible = false;
         }
         else
         {
@@ -83,8 +97,10 @@ public partial class MainPage : ContentPage
             MainStackLayout.BackgroundColor = ColorDictionary.Background;
             BtnNavBar.IsVisible = true;
             BtnAddPage.IsVisible = true;
+            Btnsettings.IsVisible = true;
         }
         Layout.Invalidate();
+        await CircuitController.StartDataChecking();  
     }
 
     /// <summary>
@@ -105,6 +121,23 @@ public partial class MainPage : ContentPage
     }
 
     /// <summary>
+    /// Opens Settings Page
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void Btnsettings_Clicked(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushModalAsync(new SettingsMenu());
+        }
+        catch (SinglePageException)
+        {
+            DisplayAlert("", "Cannot open this page twice", "OK");
+        }
+    }
+
+    /// <summary>
     /// Event handler for when 
     /// the canvas is clicked
     /// </summary>
@@ -116,7 +149,7 @@ public partial class MainPage : ContentPage
         var pos = new Position(
             (float)((TappedEventArgs)e).GetPosition(this)!.Value.X,
             (float)((TappedEventArgs)e).GetPosition(this)!.Value.Y);
-        var tempPos = new Position(pos.X, pos.Y);
+        var tempPos = (Position)pos.Clone();
         pos.Round(Tile.Size);
 
         Position = pos;
@@ -129,6 +162,12 @@ public partial class MainPage : ContentPage
             if (AppState.IsRunning)     // If the app is running
             {
                 tile.Clicked(tempPos);
+                if (tile is IInput) 
+                {
+                    int pin = tile.GetPin();
+                    int val = ((IInput)tile).GetInputValue();
+                    CircuitController.SendData(pin, val);
+                }
                 Layout.Invalidate();
                 return;
             }
@@ -245,7 +284,7 @@ public partial class MainPage : ContentPage
     {
         // Get the index of grid by the pages number
         _currentGrid = tileGrids[int.Parse(
-                                        ((Button)sender)
+                                        ((Microsoft.Maui.Controls.Button)sender)
                                         .Text[4]
                                         .ToString()) - 1];
         Layout.Invalidate();
@@ -260,9 +299,10 @@ public partial class MainPage : ContentPage
     {
         if (AppState.IsRunning) return;
 
-        var index = int.Parse(((Button)sender)
+        var index = int.Parse(((Microsoft.Maui.Controls.Button)sender)
                                .Text[4]
                                .ToString()) - 1;
+        tileGrids[index].Clear();
         tileGrids.Remove(tileGrids[index]);
 
         HandleBottomBtnCreation();

@@ -35,7 +35,7 @@ public static class GridEncoder
     /// </summary>
     /// <param name="grids"></param>
     /// <returns></returns>
-    public static string Encode(List<TileGrid> grids)
+    public static string Encode(List<TileGrid> grids) 
     {
         string data = "";
         foreach (var grid in grids)

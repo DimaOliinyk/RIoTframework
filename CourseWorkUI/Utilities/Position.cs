@@ -2,7 +2,7 @@
 
 namespace CourseWorkUI.Utilities;
 
-public class Position
+public class Position : ICloneable
 {
     // X and Y positions
     public float X { get; set; }
@@ -78,4 +78,6 @@ public class Position
         }
         return new Position(coordinates[0], coordinates[1]);
     }
+
+    public object Clone() => new Position(this.X, this.Y);
 }

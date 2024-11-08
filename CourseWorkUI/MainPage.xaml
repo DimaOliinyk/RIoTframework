@@ -47,7 +47,8 @@
                              MinimumWidthRequest="30"
                              BackgroundColor="{AppThemeBinding 
                                         Dark={StaticResource PrimaryColorDark}, 
-                                        Light={StaticResource PrimaryColor}}"/>
+                                        Light={StaticResource PrimaryColor}}"
+                             Clicked="Btnsettings_Clicked"/>
 
                 <!-- Run/Pause button -->
                 <ImageButton x:Name="BtnRunPause"
