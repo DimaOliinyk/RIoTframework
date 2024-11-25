@@ -100,6 +100,9 @@
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png">
       <PackagePath>graph.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_aled.scale-100.png">
+      <PackagePath>icon_aled.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png">
       <PackagePath>icon_button.scale-100.png</PackagePath>
     </AppxPackagedFile>

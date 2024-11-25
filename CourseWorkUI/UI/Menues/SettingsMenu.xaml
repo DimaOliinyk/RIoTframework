@@ -40,16 +40,29 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!-- IDLE button -->
+            <Button x:Name="BtnIdle"
+                    Text="IDLE"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    Clicked="BtnIdle_Clicked"
+                    Style="{StaticResource SpecialButton}"/>
             <!-- Save button -->
             <Button x:Name="BtnSave"
                     Text="Save"
                     Grid.Column="0"
+                    Grid.Row="1"
                     Clicked="BtnSave_Clicked"
                     Style="{StaticResource SaveBtn}"/>
             <!-- Cacel button -->
             <Button x:Name="BtnCancel"
                     Text="Cancel"
                     Grid.Column="1" 
+                    Grid.Row="1"
                     Clicked="BtnCancel_Clicked"
                     Style="{StaticResource CancelButton}"/>
         </Grid>

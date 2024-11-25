@@ -17,6 +17,10 @@ public static class WIFIProperties
         Properties.Add(_delay = new TPropertyValue<double>("1000", "Delay"));   
     }
 
+    /// <summary>
+    /// Extra verification of settings
+    /// </summary>
+    /// <returns></returns>
     public static bool TransferDataAndCheck() 
     {
         if (_delay.GetNumber() < 0.0 || 

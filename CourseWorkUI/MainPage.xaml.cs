@@ -23,10 +23,13 @@ public partial class MainPage : ContentPage
     // Tile Type (gets set by other menu)
     public static string? TileType { get; set; } = null;
 
+    // Event for updating screen
+    public void UpdateScreenFunc() => Layout.Invalidate();
+
     public MainPage()
     {
         InitializeComponent();
-
+        CircuitController.UpdateScreen += UpdateScreenFunc;
         // Layout to which Tile will be added to 
         Layout.Drawable = new GraphicsViewDrawable();
         tileGrids.Add(_currentGrid);
@@ -75,32 +78,44 @@ public partial class MainPage : ContentPage
             return;
         }
 
-        // TODO: Try to connect
-        // When connected try to get values from server and assign them to correct pin. refresh canvas 
-        // When input detected, call send value on appropriate tile
-
-
         AppState.Change();
 
         if (AppState.IsRunning)     // if the app is running
         {
             CircuitController.PrepareData(tileGrids);
-            BtnRunPause.Source = ImageSource.FromFile("stop.png");
-            MainStackLayout.BackgroundColor = ColorDictionary.TileBackground;
-            BtnNavBar.IsVisible = false;
-            BtnAddPage.IsVisible = false;
-            Btnsettings.IsVisible = false;
         }
-        else
+        ChangeVisualRunningState();
+
+        try
         {
-            BtnRunPause.Source = ImageSource.FromFile("run.png");
-            MainStackLayout.BackgroundColor = ColorDictionary.Background;
-            BtnNavBar.IsVisible = true;
-            BtnAddPage.IsVisible = true;
-            Btnsettings.IsVisible = true;
+            await CircuitController.StartDataChecking();
         }
+        catch (HttpRequestException)
+        {
+            await DisplayAlert("", "Client not responding", "OK");
+            AppState.TurnOff();
+            ChangeVisualRunningState();
+        }
+        catch (UriFormatException)
+        {
+            await DisplayAlert("", "Invalid IP address specified", "OK");
+            AppState.TurnOff();
+            ChangeVisualRunningState();
+        }
+    }
+
+    private void ChangeVisualRunningState() 
+    {
+        BtnRunPause.Source = (AppState.IsRunning)
+                                      ? ImageSource.FromFile("stop.png")
+                                      : ImageSource.FromFile("run.png");
+        MainStackLayout.BackgroundColor = (AppState.IsRunning)
+                                                    ? ColorDictionary.TileBackground
+                                                    : ColorDictionary.Background;
+        BtnNavBar.IsVisible = !AppState.IsRunning;
+        BtnAddPage.IsVisible = !AppState.IsRunning;
+        Btnsettings.IsVisible = !AppState.IsRunning;
         Layout.Invalidate();
-        await CircuitController.StartDataChecking();  
     }
 
     /// <summary>
@@ -166,7 +181,14 @@ public partial class MainPage : ContentPage
                 {
                     int pin = tile.GetPin();
                     int val = ((IInput)tile).GetInputValue();
-                    CircuitController.SendData(pin, val);
+                    try 
+                    {
+                        CircuitController.SendData(pin, val);
+                    }
+                    catch(Exception)
+                    {
+                        DisplayAlert("", "Cannot send pin data", "OK");
+                    }
                 }
                 Layout.Invalidate();
                 return;

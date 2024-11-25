@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseWorkUI.UI.Menues.IDEL.IDLEPage"
+             Title="IDLEPage">
+    <Grid BackgroundColor="{AppThemeBinding 
+                                Dark={StaticResource BackgroundColorDark},
+                                Light={StaticResource BackgroundColor}}">
+        
+        <!-- Here items will be added -->
+        <ScrollView>
+            <VerticalStackLayout x:Name="VSMain"
+                                BackgroundColor="{AppThemeBinding 
+                                    Dark={StaticResource BackgroundColorDark},
+                                    Light={StaticResource BackgroundColor}}"/>
+        </ScrollView>
+
+
+        <ScrollView HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="End">
+            <Button x:Name="BtnSave"
+                    Style="{StaticResource SaveBtn}"
+                    Text="Save"                    
+                    Clicked="BtnSave_Clicked"/>
+        </ScrollView>
+    </Grid>
+</ContentPage>

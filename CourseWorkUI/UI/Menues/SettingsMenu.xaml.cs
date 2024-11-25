@@ -1,10 +1,9 @@
 using CourseWorkUI.Controller;
+using CourseWorkUI.UI.Menues.IDEL;
 using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.Utilities.Exceptions;
 
 namespace CourseWorkUI.UI.Menues;
-
-// TODO:Important: Change TProperty to TPropertyNumber of Pins 
 
 public partial class SettingsMenu : ContentPage
 {
@@ -21,10 +20,9 @@ public partial class SettingsMenu : ContentPage
         InitializeComponent();
 
         _rowCounter = 0;
-        foreach (TProperty prop in WIFIProperties.Properties) 
-        {
-            _entries.Add(prop.ToXaml(GrdProperties, _rowCounter++));
-        }
+
+        WIFIProperties.Properties.ForEach(prop =>
+            _entries.Add(prop.ToXaml(GrdProperties, _rowCounter++)));
     }
 
     private void BtnSave_Clicked(object sender, EventArgs e)
@@ -53,4 +51,9 @@ public partial class SettingsMenu : ContentPage
     private void BtnCancel_Clicked(object sender, EventArgs e) => Navigation.PopModalAsync();
 
     protected override void OnDisappearing() => _pageIsOpen = false;
+
+    private void BtnIdle_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new IDLEPage());
+    }
 }

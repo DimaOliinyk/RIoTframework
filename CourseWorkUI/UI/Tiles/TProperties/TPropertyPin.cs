@@ -21,15 +21,9 @@ public class TPropertyPin : TProperty
     {
     }
 
-    public int GetNumber() 
-    {
-        return Int32.Parse(Value);
-    }
+    public int GetNumber() => Int32.Parse(Value);
 
-    public bool TryGetNumber(out int pinNumber)
-    {
-        return Int32.TryParse(Value, out pinNumber);
-    }
+    public bool TryGetNumber(out int pinNumber) => Int32.TryParse(Value, out pinNumber);
 
     public override bool IsCorrect() 
     {

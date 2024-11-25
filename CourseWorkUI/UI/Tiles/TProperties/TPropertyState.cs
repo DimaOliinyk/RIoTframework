@@ -8,7 +8,7 @@ public class TPropertyState : TProperty
     private string _label;
 
     //Alias for base class property Value
-    public bool Value 
+    public new bool Value 
     {
         set 
         {

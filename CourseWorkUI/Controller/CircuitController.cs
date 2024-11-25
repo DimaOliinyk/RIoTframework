@@ -3,13 +3,13 @@ using CourseWorkUI.UI;
 using CourseWorkUI.UI.Menues;
 using CourseWorkUI.UI.Tiles;
 using CourseWorkUI.Utilities;
-using System.Net.NetworkInformation;
 
 namespace CourseWorkUI.Controller;
 
 public class CircuitController
 {
     private static Tile?[] UsedPins;
+    public static event Action UpdateScreen;
     public static string? IP
     {
         get => CircuitModel.IPAddress;
@@ -21,10 +21,8 @@ public class CircuitController
         set => CircuitModel.TimeDelay = value; 
     }
 
-    public static void SendData(int pin, int value)
-    {
+    public static void SendData(int pin, int value) =>
         CircuitModel.Send(CircuitInterpreter.Encode(pin, value));
-    }
 
     public static async Task StartDataChecking()
     {
@@ -62,6 +60,7 @@ public class CircuitController
             if (UsedPins[pin] == null)
                 return;
             ((IOutput)UsedPins[pin]!).SetValue(val);
+            if (UpdateScreen != null) UpdateScreen();
         }
         catch 
         {

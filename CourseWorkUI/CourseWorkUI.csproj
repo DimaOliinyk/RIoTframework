@@ -95,6 +95,7 @@
 	  <None Remove="Resources\Fonts\Tomorrow-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Tomorrow-Thin.ttf" />
 	  <None Remove="Resources\Images\file_options.png" />
+	  <None Remove="Resources\Images\icon_aled.png" />
 	  <None Remove="Resources\Images\icon_button.png" />
 	  <None Remove="Resources\Images\icon_gauge.png" />
 	  <None Remove="Resources\Images\icon_graph.png" />
@@ -125,6 +126,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="UI\Menues\IDEL\IDLEPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="UI\Menues\SettingsMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

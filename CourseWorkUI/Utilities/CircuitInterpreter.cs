@@ -14,7 +14,6 @@ public class CircuitInterpreter
         return content;
     }
 
-    // TODO: Not tested
     public static bool Decode(string data)
     {
         CircuitModel.Pins.Clear();
@@ -40,5 +39,6 @@ public class CircuitInterpreter
         }
     }
 
-    public static string ExtractData(string data) => data.Split("\r\n")[0];
+    public static string ExtractData(string data) => (!String.IsNullOrEmpty(data) ) ? 
+                                                            data.Split("\r\n")[0] : "";
 }

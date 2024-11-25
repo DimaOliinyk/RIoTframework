@@ -15,4 +15,5 @@ public static class AppState
     /// Changes the mode to the opposite (Running/Editing)
     /// </summary>
     public static void Change() => IsRunning = !IsRunning;
+    public static void TurnOff() => IsRunning = false;
 }

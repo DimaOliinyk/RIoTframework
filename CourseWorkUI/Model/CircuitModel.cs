@@ -1,4 +1,5 @@
-﻿using CourseWorkUI.Utilities;
+﻿using CourseWorkUI.Controller;
+using CourseWorkUI.Utilities;
 using System.Net.NetworkInformation;
 
 namespace CourseWorkUI.Model;
@@ -22,7 +23,7 @@ public class CircuitModel
         {
             await _httpClient.PostAsync(IPAddress, data);
         }
-        catch (HttpRequestException ex)     // TODO: Capture timeout exception
+        catch (Exception)
         {
             throw;
         }

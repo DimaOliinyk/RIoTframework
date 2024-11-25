@@ -91,7 +91,5 @@ public class CircularArrEnum<T>
 
     public bool MoveNext() => _position++ < _array.Count - 1;
 
-    public void Reset()
-    {
-    }
+    public void Reset(){}
 }

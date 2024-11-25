@@ -20,7 +20,7 @@ public class TileGrid
     public double Width { get; private set; }
     public double Height { get; private set; }
 
-    public List<Tile> Tiles { get; private set; }  = new List<Tile>();   // List of Tiles
+    public List<Tile> Tiles { get; private set; }  = new();   // List of Tiles
 
     public TileGrid(double width, double height)
     {
@@ -36,7 +36,7 @@ public class TileGrid
     {
         return
 #if WINDOWS
-            new TileGrid(App.WindowWidth - 50, //360
+            new TileGrid(App.WindowWidth - 50, 
                  Math.Round(
                      App.WindowHeight /
                      (App.WindowWidth)) *
@@ -57,14 +57,15 @@ public class TileGrid
     /// <returns></returns>
     public bool SpaceIsOccupied(Position pos) 
     {
-        foreach (var tile in Tiles)
+        /*foreach (var tile in Tiles)
         {
             if (IsOccupied(tile, pos))
             {
                 return true;
             }
         }
-        return false;
+        return false;*/
+        return Tiles.FirstOrDefault(tile => IsOccupied(tile, pos)) != null;
     }
 
     /// <summary>
@@ -115,14 +116,15 @@ public class TileGrid
     /// <returns></returns>
     public Tile? GetTile(Position pos)
     {
-        foreach (var tile in Tiles)
+        /*foreach (var tile in Tiles)
         {
             if (IsOccupied(tile, pos))
             {
                 return tile;
             }
         }
-        return null;
+        return null;*/
+        return Tiles.FirstOrDefault(tile => IsOccupied(tile, pos));
     }
 
     /// <summary>
@@ -137,7 +139,7 @@ public class TileGrid
     /// <param name="newTile"></param>
     public void RemoveTile(Tile newTile)
     {
-        foreach (var tile in Tiles)
+        /*foreach (var tile in Tiles)
         {
             // if specified Tile is found it gets removed
             if (tile.Position == newTile.Position)
@@ -146,7 +148,13 @@ public class TileGrid
                 Tiles.Remove(tile);
                 break;
             }
-        }
+        }*/
+        var tile = Tiles
+                    .Where(tile => tile.Position == newTile.Position)
+                    .FirstOrDefault();
+        if (tile == null) return;
+        TileFactory.AvailablePins.Add(tile.GetPin());
+        Tiles.Remove(tile);
     }
 
     /// <summary>
@@ -156,10 +164,11 @@ public class TileGrid
     /// <param name="dirtyRect"></param>
     public void RedrawOnCanvas(ICanvas canvas, RectF dirtyRect) 
     {
-        foreach (var tile in Tiles) 
+        /*foreach (var tile in Tiles) 
         {
             tile.DrawOnCanvas(canvas, dirtyRect);
-        }
+        }*/
+        Tiles.ForEach(tile => tile.DrawOnCanvas(canvas, dirtyRect));
     }
 
     /// <summary>
@@ -189,10 +198,11 @@ public class TileGrid
         {
             res += 
                 $"@{tile.Position.X / tile.Height};{tile.Position.Y / tile.Height},{tile.GetType().ToString().Substring(22).ToUpperInvariant()},";
-            foreach (var prop in tile.Properties) 
+            /*foreach (var prop in tile.Properties) 
             {
                 res += prop.Value.ToString()+",";
-            }
+            }*/
+            tile.Properties.ForEach(prop => res += prop.Value.ToString()+",");
         }
         return res;
     }
@@ -202,10 +212,11 @@ public class TileGrid
     /// </summary>
     public void Clear() 
     {
-        foreach (var tile in Tiles) 
+        /*foreach (var tile in Tiles) 
         {
             TileFactory.AvailablePins.Add(tile.GetPin());
-        }
+        }*/
+        Tiles.ForEach(tile => TileFactory.AvailablePins.Add(tile.GetPin()));
         Tiles.Clear();
     }
 

@@ -52,6 +52,7 @@ public static class TileFactory
             TileTypes.LED    => new Led(pos),
             TileTypes.GAUGE  => new Gauge(pos),
             TileTypes.POT    => new Pot(pos),
+            TileTypes.ALED   => new AnalogLed(pos),
             _ => throw new InvalidEnumArgumentException("Wrong Tile type"),
         };
     }
@@ -73,6 +74,7 @@ public static class TileFactory
             nameof(TileTypes.LED)    => new Led(pos),
             nameof(TileTypes.GAUGE)  => new Gauge(pos),
             nameof(TileTypes.POT)    => new Pot(pos),
+            nameof(TileTypes.ALED)   => new AnalogLed(pos),
             _ => throw new InvalidEnumArgumentException("Wrong Tile type"),
         };
     }
@@ -88,5 +90,6 @@ public enum TileTypes
     LED,
     GAUGE,
     POT,
+    ALED,
 }
 

@@ -587,3 +587,4 @@ C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-
 C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_aled.scale-100.png

@@ -63,7 +63,6 @@ class Led : Tile, IOutput
         DrawName(canvas, dirtyRect, _name.Value);
     }
 
-    public void ChangeState() => OnState = !OnState;    // Change led state
     public override int GetPin() => _pin.GetNumber();
 
     public void SetValue(int value) 

@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.Fil
 build_metadata.AdditionalFiles.TargetPath = UI\Menues\FilesMenu.xaml
 build_metadata.AdditionalFiles.RelativePath = UI\Menues\FilesMenu.xaml
 
+[C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/IDEL/IDLEPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.IDEL.IDLEPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Menues\IDEL\IDLEPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Menues\IDEL\IDLEPage.xaml
+
 [C:/Users/dolii/OneDrive/Desktop/Code/CourseWorkUI/CourseWorkUI/UI/Menues/PropertiesMenu.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CourseWorkUI.UI.Menues.PropertiesMenu.xaml

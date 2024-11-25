@@ -394,6 +394,12 @@
             Types of Tiles
             </summary>
         </member>
+        <member name="M:CourseWorkUI.UI.Menues.WIFIProperties.TransferDataAndCheck">
+            <summary>
+            Extra verification of settings
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:CourseWorkUI.UI.Tiles.Button">
             <summary>
             Class representing UI element Button 

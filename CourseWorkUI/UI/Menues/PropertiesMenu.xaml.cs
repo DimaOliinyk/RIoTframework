@@ -32,15 +32,17 @@ public partial class PropertiesMenu : ContentPage
         _tileGrid = grid;
         _rowCounter = 0;
 
-        if (_tile.Properties is not null) 
+        /*if (_tile.Properties is not null) 
         {
             foreach (var prop in _tile.Properties)
             {
                 // fills the entries list with passed entries from each property
                 _entries.Add(prop.ToXaml(VSProperties, _rowCounter++));
             }
-        }
-	}
+        }*/
+        _tile.Properties?.ForEach(prop => 
+            _entries.Add(prop.ToXaml(VSProperties, _rowCounter++)));
+    }
 
     /// <summary>
     /// Event handler for Delete button.
@@ -87,8 +89,5 @@ public partial class PropertiesMenu : ContentPage
         Navigation.PopModalAsync();
     }
 
-    protected override void OnDisappearing()
-    {
-        _pageIsOpen = false;
-    }
+    protected override void OnDisappearing() => _pageIsOpen = false;
 }

@@ -58,7 +58,7 @@
                         <Setter Property="BorderColor" Value="{StaticResource Green}"/>
                     </Style>
 
-                    <!-- Save button -->
+                    <!-- Cancel button -->
                     <Style x:Key="CancelButton" TargetType="Button">
                         <Setter Property="BackgroundColor" Value="{AppThemeBinding 
                                             Dark={StaticResource BackgroundColorDark},
@@ -93,6 +93,20 @@
                                                                     Light={StaticResource TextColor}}"/>
                         <Setter Property="Margin" Value="{OnPlatform WinUI= '0',
                                                                      Android='1'}"/>
+                    </Style>
+
+                    <!-- Special button -->
+                    <Style x:Key="SpecialButton" TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                                                        Dark={StaticResource BackgroundColorDark},
+                                                        Light={StaticResource BackgroundColor}}"/>
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="FontFamily" Value="MyMainHeavyFont"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+                        <Setter Property="Margin" Value="2,2,2,2"/>
+
+                        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"/>
+                        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}"/>
                     </Style>
 
                 </ResourceDictionary>
