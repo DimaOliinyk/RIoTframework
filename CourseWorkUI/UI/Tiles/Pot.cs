@@ -10,7 +10,7 @@ using Font = Microsoft.Maui.Graphics.Font;
 
 namespace CourseWorkUI.View.Tiles;
 
-public class Pot : Tile, IInput
+public class Pot : Tile, IInput, IExtraVerifiable
 {
     private TPropertyName _name;
     private TPropertyPin _pin;
@@ -114,11 +114,17 @@ public class Pot : Tile, IInput
     {
         try
         {
-            return (int)_value;
+            return CircuitInterpreter.ConvertFloatToInt(
+                (float)_value, 
+                _min.GetNumber(), 
+                _max.GetNumber());
         }
-        catch (Exception )
+        catch (Exception)
         {
             return 0;
         }
     }
+
+    public (bool, string) ExtraVerify() =>
+        (_min.GetNumber() < _max.GetNumber(), "Min value must be less than Max value");
 }

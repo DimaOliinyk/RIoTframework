@@ -6,10 +6,9 @@
 public static class ColorDictionary
 {
     public static bool DarkTheme { get; private set; } =
-        (Application.Current.RequestedTheme == AppTheme.Dark);
+        (Application.Current!.RequestedTheme == AppTheme.Dark);
     public static void ChangeTheme() => DarkTheme = !DarkTheme;
 
-    // TODO: Get all values in static constructor and set colors there to save on time
     public static Color Background
     {
         get 

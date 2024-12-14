@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-25T20:54:59.615</Modified>
+      <Modified>2024-12-14T12:24:22.573</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-11-24T19:35:54.164</Modified>
+      <Modified>2024-12-11T21:17:12.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.runtimeconfig.json">
       <PackagePath>CourseWorkUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-11-08T19:13:35.121</Modified>
+      <Modified>2024-11-30T22:05:25.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.dll">
       <PackagePath>CourseWorkUI.dll</PackagePath>
-      <Modified>2024-11-25T20:54:59.304</Modified>
+      <Modified>2024-12-14T12:24:21.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CourseWorkUI.exe</PackagePath>
-      <Modified>2024-11-25T20:54:59.304</Modified>
+      <Modified>2024-12-14T12:24:21.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -59,23 +59,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\riot_splashSplashScreen.scale-100.png">
       <PackagePath>riot_splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-11-07T20:35:31.498</Modified>
+      <Modified>2024-11-30T21:43:24.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\riot_splashSplashScreen.scale-125.png">
       <PackagePath>riot_splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-11-07T20:35:31.509</Modified>
+      <Modified>2024-11-30T21:43:24.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\riot_splashSplashScreen.scale-150.png">
       <PackagePath>riot_splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-11-07T20:35:31.539</Modified>
+      <Modified>2024-11-30T21:43:24.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\riot_splashSplashScreen.scale-200.png">
       <PackagePath>riot_splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-11-07T20:35:31.569</Modified>
+      <Modified>2024-11-30T21:43:24.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\riot_splashSplashScreen.scale-400.png">
       <PackagePath>riot_splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-11-07T20:35:31.709</Modified>
+      <Modified>2024-11-30T21:43:24.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -107,267 +107,267 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.719</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.719</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.719</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.718</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.718</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\file_options.scale-100.png">
       <PackagePath>file_options.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graph.scale-100.png">
       <PackagePath>graph.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_aled.scale-100.png">
       <PackagePath>icon_aled.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_button.scale-100.png">
       <PackagePath>icon_button.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.718</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_gauge.scale-100.png">
       <PackagePath>icon_gauge.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_graph.scale-100.png">
       <PackagePath>icon_graph.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.718</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_led.scale-100.png">
       <PackagePath>icon_led.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.718</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_pot.scale-100.png">
       <PackagePath>icon_pot.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\newfile.scale-100.png">
       <PackagePath>newfile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\openfile.scale-100.png">
       <PackagePath>openfile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_icon.ico">
       <PackagePath>riot_icon.ico</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLargeTile.scale-100.png">
       <PackagePath>riot_iconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLargeTile.scale-125.png">
       <PackagePath>riot_iconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLargeTile.scale-150.png">
       <PackagePath>riot_iconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLargeTile.scale-200.png">
       <PackagePath>riot_iconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLargeTile.scale-400.png">
       <PackagePath>riot_iconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>riot_iconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.713</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>riot_iconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.713</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>riot_iconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.713</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>riot_iconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.713</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>riot_iconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.713</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>riot_iconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>riot_iconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>riot_iconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>riot_iconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>riot_iconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.scale-100.png">
       <PackagePath>riot_iconLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.scale-125.png">
       <PackagePath>riot_iconLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.scale-150.png">
       <PackagePath>riot_iconLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.scale-200.png">
       <PackagePath>riot_iconLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.scale-400.png">
       <PackagePath>riot_iconLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.716</Modified>
+      <Modified>2024-11-30T21:43:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.targetsize-16.png">
       <PackagePath>riot_iconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.715</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.targetsize-24.png">
       <PackagePath>riot_iconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.715</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.targetsize-256.png">
       <PackagePath>riot_iconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.targetsize-32.png">
       <PackagePath>riot_iconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.715</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconLogo.targetsize-48.png">
       <PackagePath>riot_iconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.714</Modified>
+      <Modified>2024-11-30T21:43:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconMediumTile.scale-100.png">
       <PackagePath>riot_iconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconMediumTile.scale-125.png">
       <PackagePath>riot_iconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconMediumTile.scale-150.png">
       <PackagePath>riot_iconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconMediumTile.scale-200.png">
       <PackagePath>riot_iconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconMediumTile.scale-400.png">
       <PackagePath>riot_iconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconSmallTile.scale-100.png">
       <PackagePath>riot_iconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconSmallTile.scale-125.png">
       <PackagePath>riot_iconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconSmallTile.scale-150.png">
       <PackagePath>riot_iconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconSmallTile.scale-200.png">
       <PackagePath>riot_iconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconSmallTile.scale-400.png">
       <PackagePath>riot_iconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconStoreLogo.scale-100.png">
       <PackagePath>riot_iconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.712</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconStoreLogo.scale-125.png">
       <PackagePath>riot_iconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.712</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconStoreLogo.scale-150.png">
       <PackagePath>riot_iconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.712</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconStoreLogo.scale-200.png">
       <PackagePath>riot_iconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.712</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconStoreLogo.scale-400.png">
       <PackagePath>riot_iconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.711</Modified>
+      <Modified>2024-11-30T21:43:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconWideTile.scale-100.png">
       <PackagePath>riot_iconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.710</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconWideTile.scale-125.png">
       <PackagePath>riot_iconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconWideTile.scale-150.png">
       <PackagePath>riot_iconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconWideTile.scale-200.png">
       <PackagePath>riot_iconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\riot_iconWideTile.scale-400.png">
       <PackagePath>riot_iconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.709</Modified>
+      <Modified>2024-11-30T21:43:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\run.scale-100.png">
       <PackagePath>run.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\savefile.scale-100.png">
       <PackagePath>savefile.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png">
       <PackagePath>settings.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.717</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop.scale-100.png">
       <PackagePath>stop.scale-100.png</PackagePath>
-      <Modified>2024-11-09T10:01:33.708</Modified>
+      <Modified>2024-11-30T21:43:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\OneDrive\Desktop\Code\CourseWorkUI\CourseWorkUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CourseWorkUI.deps.json">
       <PackagePath>CourseWorkUI.deps.json</PackagePath>
-      <Modified>2024-11-24T19:35:53.994</Modified>
+      <Modified>2024-12-11T21:17:12.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -449,6 +449,14 @@
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2024-08-26T17:46:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.toolkit.uwp.notifications\7.1.3\lib\net5.0-windows10.0.17763\Microsoft.Toolkit.Uwp.Notifications.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
+      <Modified>2022-11-01T17:32:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.win32.systemevents\4.7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2019-11-15T08:54:18.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
       <Modified>2024-06-18T18:30:12.000</Modified>
@@ -508,6 +516,14 @@
     <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-06-26T19:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\plugin.localnotification\11.1.0\lib\net8.0-windows10.0.19041\Plugin.LocalNotification.dll">
+      <PackagePath>Plugin.LocalNotification.dll</PackagePath>
+      <Modified>2024-02-21T07:37:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\system.drawing.common\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2019-11-15T08:54:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dolii\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

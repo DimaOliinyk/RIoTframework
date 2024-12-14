@@ -6,11 +6,22 @@
     <Grid BackgroundColor="{AppThemeBinding 
                                 Dark={StaticResource BackgroundColorDark},
                                 Light={StaticResource BackgroundColor}}">
-        
-        <!-- Here items will be added -->
-        <ScrollView>
+
+        <Label Text="           IDLE"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               Margin="0,0,0,0"
+               FontSize="28"
+               TextColor="Black"
+               FontFamily="Tomorrow-Regular.ttf"
+               BackgroundColor="{AppThemeBinding 
+                                    Dark={StaticResource Primary},
+                                    Light={StaticResource Primary}}"/>
+
+            <!-- Here items will be added -->
+        <ScrollView Margin="10,60,10,60">
             <VerticalStackLayout x:Name="VSMain"
-                                BackgroundColor="{AppThemeBinding 
+                                 BackgroundColor="{AppThemeBinding 
                                     Dark={StaticResource BackgroundColorDark},
                                     Light={StaticResource BackgroundColor}}"/>
         </ScrollView>
@@ -18,10 +29,24 @@
 
         <ScrollView HorizontalOptions="CenterAndExpand"
                                VerticalOptions="End">
-            <Button x:Name="BtnSave"
-                    Style="{StaticResource SaveBtn}"
-                    Text="Save"                    
-                    Clicked="BtnSave_Clicked"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Button x:Name="BtnSave"
+                        Style="{StaticResource SaveBtn}"
+                        Text="Save"                    
+                        Grid.Column="0"
+                        Clicked="BtnSave_Clicked"/>
+                
+                <Button x:Name="BtnClear"
+                        Style="{StaticResource DeleteBtn}"
+                        Text="Clear"                    
+                        Grid.Column="1"
+                        Clicked="BtnClear_Clicked"/>
+            </Grid>
         </ScrollView>
     </Grid>
 </ContentPage>

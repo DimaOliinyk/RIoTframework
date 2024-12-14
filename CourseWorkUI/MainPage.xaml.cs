@@ -1,14 +1,11 @@
 ﻿using CourseWorkUI.Controller;
 using CourseWorkUI.UI;
 using CourseWorkUI.UI.Menues;
+using CourseWorkUI.UI.Menues.IDEL;
 using CourseWorkUI.UI.Tiles;
 using CourseWorkUI.Utilities;
 using CourseWorkUI.Utilities.Exceptions;
 using CourseWorkUI.View;
-
-#if WINDOWS
-using Windows.Storage.Provider;
-#endif
 
 namespace CourseWorkUI;
 
@@ -29,13 +26,14 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+
         CircuitController.UpdateScreen += UpdateScreenFunc;
         // Layout to which Tile will be added to 
         Layout.Drawable = new GraphicsViewDrawable();
         tileGrids.Add(_currentGrid);
         LblProjectsName.Text = FileController.GetProjectName();
 
-        App.Current.ModalPopping += HandleModalPopping;    // Set event handler for page popping
+        App.Current!.ModalPopping += HandleModalPopping!;    // Set event handler for page popping
 
         // Event handler for theme changing
         Application.Current.RequestedThemeChanged += (s, a) =>
@@ -43,7 +41,7 @@ public partial class MainPage : ContentPage
             ColorDictionary.ChangeTheme();  // Change theme in color dictionary
 
             // Check Background color
-            MainStackLayout.BackgroundColor = (AppState.IsRunning == true) ?
+            MainStackLayout.BackgroundColor = (AppState.IsRunning) ?
                 ColorDictionary.TileBackground :
                 ColorDictionary.Background;
 
@@ -80,9 +78,21 @@ public partial class MainPage : ContentPage
 
         AppState.Change();
 
-        if (AppState.IsRunning)     // if the app is running
+        if (AppState.IsRunning)
         {
-            CircuitController.PrepareData(tileGrids);
+            try
+            {
+                await CircuitController.PrepareData(tileGrids);
+            }
+            catch (Exception)
+            {
+                await DisplayAlert("", "Connection Error", "OK");
+                IDLEState.TurnOff();
+            }
+        }
+        else 
+        {
+            IDLEState.TurnOff();
         }
         ChangeVisualRunningState();
 
@@ -94,12 +104,21 @@ public partial class MainPage : ContentPage
         {
             await DisplayAlert("", "Client not responding", "OK");
             AppState.TurnOff();
+            IDLEState.TurnOff();
             ChangeVisualRunningState();
         }
         catch (UriFormatException)
         {
             await DisplayAlert("", "Invalid IP address specified", "OK");
             AppState.TurnOff();
+            IDLEState.TurnOff();
+            ChangeVisualRunningState();
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("", $"Something went wrong. More info:\n{ex.Message}", "OK");
+            AppState.TurnOff();
+            IDLEState.TurnOff();
             ChangeVisualRunningState();
         }
     }
@@ -212,7 +231,7 @@ public partial class MainPage : ContentPage
 
     /// <summary>
     /// Event handler for when any page 
-    /// (PropertiesMenu, AddMenu, FilesMenu)
+    /// (eg. PropertiesMenu, AddMenu, FilesMenu)
     /// gets closed
     /// </summary>
     /// <param name="sender"></param>
@@ -278,14 +297,14 @@ public partial class MainPage : ContentPage
             BtnFirstPage.IsVisible = (BottomBarButton.Count != 1) ? true : false;
 
             TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
-            tapGestureRecognizer.Tapped += BtnBottomNav_Clicked;
+            tapGestureRecognizer!.Tapped += BtnBottomNav_Clicked!;
             button.GestureRecognizers.Add(tapGestureRecognizer);
 
             var upSwipeGesture = new SwipeGestureRecognizer 
             { 
                 Direction = SwipeDirection.Up 
             };
-            upSwipeGesture.Swiped += OnSwiped;
+            upSwipeGesture!.Swiped += OnSwiped!;
             button.GestureRecognizers.Add(upSwipeGesture);
             
             BottomBar.Add(button);
@@ -348,14 +367,14 @@ public partial class MainPage : ContentPage
                 BtnFirstPage.IsVisible = (BottomBarButton.Count != 1) ? true : false;
 
                 TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
-                tapGestureRecognizer.Tapped += BtnBottomNav_Clicked;
+                tapGestureRecognizer.Tapped += BtnBottomNav_Clicked!;
                 button.GestureRecognizers.Add(tapGestureRecognizer);
 
                 var upSwipeGesture = new SwipeGestureRecognizer 
                 { 
                     Direction = SwipeDirection.Up 
                 };
-                upSwipeGesture.Swiped += OnSwiped;
+                upSwipeGesture!.Swiped += OnSwiped!;
                 button.GestureRecognizers.Add(upSwipeGesture);
 
                 BottomBar.Add(button);
@@ -367,5 +386,15 @@ public partial class MainPage : ContentPage
         }
         LblProjectsName.Text = FileController.GetProjectName();
         _currentGrid = tileGrids[0];
+    }
+
+    public static void IDLEData() 
+    {
+        CircuitController.StartIDLEDataSending(IDLEPage.TimePinVal);
+    }
+
+    public static void ReadData()
+    {
+        CircuitController.StartDataChecking();
     }
 }

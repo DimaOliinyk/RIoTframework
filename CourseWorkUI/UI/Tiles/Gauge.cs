@@ -2,37 +2,34 @@
 using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
+using CourseWorkUI.View.Tiles.TProperties;
 using System.Diagnostics;
 using Font = Microsoft.Maui.Graphics.Font;
 
 namespace CourseWorkUI.UI.Tiles;
 
-// TODO: check for argument to be 0.
-
 /// <summary>
 /// Gauge Tile
 /// </summary>
-public class Gauge : Tile, IOutput
+public class Gauge : Tile, IOutput, IDBSaveable, IExtraVerifiable
 {
     private TProperty _name;        // Name property
     private TPropertyPin _pin;
     private TPropertyValue<float> _min;    // Min value property
     private TPropertyValue<float> _max;    // Max value property
     private double _value;          // Value that will be passed to Chart
+    private TPropertyLogical _logical;
+    private TPropertyState _monitoredToDB;
 
     public Gauge(Position pos) : base(pos, Tile.Size, Tile.Size)
     {
-        _name = new TPropertyName("Pie");
-        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
-        _min = new TPropertyValue<float>("0", "Min");
-        _max = new TPropertyValue<float>("255", "Max");
+        Properties.Add(_name = new TPropertyName("Pie"));
+        Properties.Add(_pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}"));
+        Properties.Add(_min = new TPropertyValue<float>("0", "Min"));
+        Properties.Add(_max = new TPropertyValue<float>("255", "Max"));
+        Properties.Add(_logical = new TPropertyLogical());
+        Properties.Add(_monitoredToDB = new TPropertyState("Save to DB"));
 
-        Properties.Add(_name);
-        Properties.Add(_pin);
-        Properties.Add(_min);
-        Properties.Add(_max);
-
-        // for debugging
         Random rand = new Random();
         _value = rand.NextDouble()*(_max.GetNumber() - _min.GetNumber()) + _min.GetNumber();
     }
@@ -60,7 +57,7 @@ public class Gauge : Tile, IOutput
         canvas.DrawArc(
             x, y,
             r, r,
-            -400f + 180f * (1f - (float)_value / _max.GetNumber()), 220,
+            -400f + 180f * (1f - (float)_value / (float)(_max.GetNumber() - _min.GetNumber())), 220,
             false, false);
 
         canvas.DrawString(
@@ -74,5 +71,17 @@ public class Gauge : Tile, IOutput
 
     public override int GetPin() => _pin.GetNumber();
 
-    public void SetValue(int value) => _value = value;
+    public void SetValue(int value)
+    {
+        _value = CircuitInterpreter.ConvertIntToFloat(value, _min.GetNumber() + 50f, _max.GetNumber() - 50f);
+        if (_logical.ConditionIsTrue(value))
+        {
+            NotificationSender.Notify($"Value of pin {_pin.GetNumber()} is {_value}");
+        }
+    }
+
+    public bool SaveToDB => _monitoredToDB.Value;
+
+    public (bool, string) ExtraVerify() =>
+        (_min.GetNumber() < _max.GetNumber(), "Min value must be less than Max value");
 }

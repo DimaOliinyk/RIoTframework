@@ -79,6 +79,7 @@ public class TileGrid
         if (newTile.Position.X > Width ||    
             newTile.Position.Y > Height)
         {
+            TileFactory.AvailablePins.Add(newTile.GetPin());
             return ETileGrid.OUT_OF_BOUNDS;
         }
 
@@ -86,6 +87,7 @@ public class TileGrid
         if (newTile.Position.X + newTile.Width > Width ||
             newTile.Position.Y + newTile.Height > Height) 
         {
+            TileFactory.AvailablePins.Add(newTile.GetPin());
             return ETileGrid.ELEMENT_TO_WIDE;
         }
 
@@ -94,6 +96,7 @@ public class TileGrid
         {
             if (tile.Position == newTile.Position)
             {
+                TileFactory.AvailablePins.Add(newTile.GetPin());
                 return ETileGrid.FALSE;
             }
             
@@ -102,6 +105,7 @@ public class TileGrid
                 newTile.Position.X < tile.Position.X &&
                 newTile.Position.Y == tile.Position.Y)
             {
+                TileFactory.AvailablePins.Add(newTile.GetPin());
                 return ETileGrid.ELEMENT_TO_WIDE;
             }
         }

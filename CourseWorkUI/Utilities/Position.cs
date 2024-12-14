@@ -9,7 +9,7 @@ public class Position : ICloneable
     public float Y { get; set; }
 
     /// <summary>
-    /// Rounds the position 
+    /// Rounds the position (mutable)
     /// </summary>
     /// <param name="tileSize"></param>
     /// <returns></returns>

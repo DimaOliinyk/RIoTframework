@@ -30,10 +30,11 @@
                                     Light={StaticResource PrimaryColor}}"/>
         
         <!-- File options -->
-        <VerticalStackLayout Margin="0,56,0,0"
-                             BackgroundColor="{AppThemeBinding 
-                                    Dark={StaticResource BackgroundColorDark},
-                                    Light={StaticResource BackgroundColor}}">
+        <VerticalStackLayout
+            Margin="0,56,0,0"
+            BackgroundColor="{AppThemeBinding 
+                   Dark={StaticResource BackgroundColorDark},
+                   Light={StaticResource BackgroundColor}}">
             <!-- Save project button -->
             <ImageButton x:Name="BtnSave"
                          Source="savefile.png"

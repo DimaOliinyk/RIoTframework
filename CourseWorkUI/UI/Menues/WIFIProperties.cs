@@ -1,7 +1,6 @@
 ﻿using CourseWorkUI.Controller;
 using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TProperties.SettingsProperties;
-using CourseWorkUI.Utilities;
 
 namespace CourseWorkUI.UI.Menues;
 

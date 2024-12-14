@@ -2,22 +2,24 @@
 using CourseWorkUI.UI.Tiles.TProperties;
 using CourseWorkUI.UI.Tiles.TPropertiesp;
 using CourseWorkUI.Utilities;
+using CourseWorkUI.View.Tiles.TProperties;
 
 namespace CourseWorkUI.UI.Tiles;
 
-public class AnalogLed : Tile, IOutput
+public class AnalogLed : Tile, IOutput, IDBSaveable
 {
     private TPropertyName _name;
     private TPropertyPin _pin;
+    private TPropertyLogical _logical;
+    private TPropertyState _monitoredToDB;
     private int _value = 0;
 
     public AnalogLed(Position pos) : base(pos, Tile.Size, Tile.Size)
     {
-        _name = new TPropertyName("ALED");
-        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
-
-        Properties.Add(_name);
-        Properties.Add(_pin);
+        Properties.Add(_name = new TPropertyName("ALED"));
+        Properties.Add(_pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}"));
+        Properties.Add(_logical = new TPropertyLogical());
+        Properties.Add(_monitoredToDB = new TPropertyState("Save to DB"));
     }
 
     protected override void DrawElementOverridable(ICanvas canvas, RectF dirtyRect)
@@ -38,5 +40,14 @@ public class AnalogLed : Tile, IOutput
     }
 
     public override int GetPin() => _pin.GetNumber();
-    public void SetValue(int value) => _value = Math.Clamp(value, 0, 255);
+    public void SetValue(int value) 
+    {
+        _value = Math.Clamp(value, 0, 255);
+        if (_logical.ConditionIsTrue(_value)) 
+        {
+            NotificationSender.Notify($"Value of pin {GetPin()} is {_value}");
+        }
+    }
+    
+    public bool SaveToDB => _monitoredToDB.Value;
 }

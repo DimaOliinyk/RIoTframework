@@ -32,7 +32,7 @@ public class TPropertyValue : TProperty
 
     public override bool IsCorrect()
     {
-        return GetNumber(out double dummyValue);
+        return GetNumber(out double _);
     }
 
     public override IView ToXaml(Grid vs, int rowCount)
@@ -100,10 +100,7 @@ public class TPropertyValue<T> : TProperty where T : INumber<T>
         return res;
     }
 
-    public override bool IsCorrect()
-    {
-        return GetNumber(out T dummyValue);
-    }
+    public override bool IsCorrect() => GetNumber(out T _);
 
     public override IView ToXaml(Grid vs, int rowCount)
     {

@@ -1,4 +1,6 @@
-﻿using CourseWorkUI.Utilities.Exceptions;
+﻿using CourseWorkUI.UI.Tiles;
+using CourseWorkUI.Utilities.Exceptions;
+using System.Diagnostics.Contracts;
 
 namespace CourseWorkUI.UI.Menues;
 
@@ -32,14 +34,6 @@ public partial class PropertiesMenu : ContentPage
         _tileGrid = grid;
         _rowCounter = 0;
 
-        /*if (_tile.Properties is not null) 
-        {
-            foreach (var prop in _tile.Properties)
-            {
-                // fills the entries list with passed entries from each property
-                _entries.Add(prop.ToXaml(VSProperties, _rowCounter++));
-            }
-        }*/
         _tile.Properties?.ForEach(prop => 
             _entries.Add(prop.ToXaml(VSProperties, _rowCounter++)));
     }
@@ -82,6 +76,15 @@ public partial class PropertiesMenu : ContentPage
             if (!_tile.Properties[i].IsCorrect()) // checks whether properties are correct
             {
                 DisplayAlert("Error", $"Wrong value at row {i+1}\n - Values cannot be empty;\n - Pin numbers have to be numeric;", "OK");
+                return;
+            }
+        }
+        if (_tile is IExtraVerifiable) 
+        {
+            var (isCorrect, message) = ((IExtraVerifiable)_tile).ExtraVerify();
+            if (!isCorrect) 
+            {
+                DisplayAlert("Error", $"{message}", "OK");
                 return;
             }
         }

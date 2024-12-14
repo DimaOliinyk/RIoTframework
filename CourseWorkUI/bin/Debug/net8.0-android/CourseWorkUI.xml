@@ -9,7 +9,7 @@
             Represents the current state of the App 
             </summary>
         </member>
-        <member name="P:CourseWorkUI.AppState.IsRunning">
+        <member name="F:CourseWorkUI.AppState._isRunning">
             <summary>
             Allows to check whether the app 
             is in the running or editing mode 
@@ -105,7 +105,7 @@
         <member name="M:CourseWorkUI.MainPage.HandleModalPopping(System.Object,System.EventArgs)">
             <summary>
             Event handler for when any page 
-            (PropertiesMenu, AddMenu, FilesMenu)
+            (eg. PropertiesMenu, AddMenu, FilesMenu)
             gets closed
             </summary>
             <param name="sender"></param>
@@ -538,7 +538,7 @@
         </member>
         <member name="M:CourseWorkUI.Utilities.Position.Round(System.Single)">
             <summary>
-            Rounds the position 
+            Rounds the position (mutable)
             </summary>
             <param name="tileSize"></param>
             <returns></returns>

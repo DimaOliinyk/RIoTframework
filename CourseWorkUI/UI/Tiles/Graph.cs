@@ -7,12 +7,10 @@ using Font = Microsoft.Maui.Graphics.Font;
 
 namespace CourseWorkUI.UI.Tiles;
 
-// TODO: check for argument to be 0.
-
 /// <summary>
 /// Graph in Cartesian coordinate system
 /// </summary>
-public class Graph : Tile, IOutput
+public class Graph : Tile, IOutput, IDBSaveable, IExtraVerifiable
 {
     private TProperty _name;
     private TPropertyPin _pin;
@@ -20,26 +18,24 @@ public class Graph : Tile, IOutput
     private TPropertyValue<float> _max;
     private TPropertyValue<int> _valueCount;
     private TPropertyState _isSimple;
+    private TPropertyLogical _logical;
+    private TPropertyState _monitoredToDB;
     private CircularArray<float> _array;
 
     private Random _random = new Random();
 
     public Graph(Position pos) : base(pos, 2 * Tile.Size, Tile.Size)
     {
-        _name = new TPropertyName("Graph");
-        _pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}");
-        _min = new TPropertyValue<float>("0", "Min");
-        _max = new TPropertyValue<float>("255", "Max");
-        _valueCount = new TPropertyValue<int>("8", "Count");
-        _isSimple = new TPropertyState("Simplify");
+        Properties.Add(_name = new TPropertyName("Graph"));
+        Properties.Add(_pin = new TPropertyPin($"{TileFactory.GetAvailablePin()}"));
+        Properties.Add(_min = new TPropertyValue<float>("0", "Min"));
+        Properties.Add(_max = new TPropertyValue<float>("255", "Max"));
+        Properties.Add(_valueCount = new TPropertyValue<int>("8", "Count"));
+        Properties.Add(_isSimple = new TPropertyState("Simplify"));
+        Properties.Add(_logical = new TPropertyLogical());
+        Properties.Add(_monitoredToDB = new TPropertyState("Save to DB"));
+        
         _array = new CircularArray<float>(_valueCount.GetNumber());
-
-        Properties.Add(_name);
-        Properties.Add(_pin);
-        Properties.Add(_min);
-        Properties.Add(_max);
-        Properties.Add(_valueCount);
-        Properties.Add(_isSimple);
 
         for(int i = 0; i < _array.Count; i++) 
         {
@@ -73,15 +69,22 @@ public class Graph : Tile, IOutput
         float count = (Width - 110f) / _valueCount.GetNumber();
         float xStart = Position.X + 50;
 
-        for (; min <= max; min += (max - constMin) / 2)     // Number scale
+        // Draw scale
+        for (startPos += diff * (max - constMin != 0 ? 2 : 1);
+             min <= max; 
+             min += (max - constMin) / 2)     
         {
             canvas.DrawString(
-                $"{(max - min):0.00}",
+                $"{min:0.00}",
                 xStart,
                 startPos,
                 HorizontalAlignment.Right);
-            startPos += diff;
+            startPos -= diff;
+
+            if (max - constMin == 0)
+                break; 
         }
+        startPos += 4 * diff;
 
         PathF path = new PathF();
 #if WINDOWS
@@ -90,13 +93,13 @@ public class Graph : Tile, IOutput
         path.Move(xStart += 20f, startPos -= diff);
 #endif
         path.LineTo(xStart, startPos);
-        float value = startPos + _array[0] / _max.GetNumber() * (-2f * diff) - 5f;
+        float value = startPos + _array[0] / (max - constMin) * (-2f * diff) - 5f;
         float prevValue;
 
         foreach (float item in _array)
         {
             prevValue = value;
-            value = startPos + (float)(item / _max.GetNumber() * (-2 * diff)) - 5;
+            value = startPos + (float)(item / (max - constMin) * (-2 * diff)) - 5;
 
             if(_isSimple.Value == false)
                 canvas.DrawLine(xStart, prevValue, xStart+count, value);
@@ -112,7 +115,7 @@ public class Graph : Tile, IOutput
             var gradient = new LinearGradientPaint
             {
                 StartColor = ColorDictionary.TransparentPrimary,
-                EndColor = ColorDictionary.TileBackground,  //Using Colors.Transparent causes to not display Tile frame
+                EndColor = ColorDictionary.TileBackground,
                 StartPoint = new Point(0, 0),
                 EndPoint = new Point(0, 1),
             };
@@ -120,7 +123,7 @@ public class Graph : Tile, IOutput
             gradient.AddOffset(0.95f, Colors.Transparent);
 
 
-            // TODO:FIXMELATER: SetFillPaint effects other ui if not reset
+            // TODO:FIXMELATER: SetFillPaint effects other UI elements if not reset
             canvas.SetFillPaint(gradient, new RectF(Position.X, Position.Y, Width, Height));
         }
         else 
@@ -131,10 +134,24 @@ public class Graph : Tile, IOutput
         DrawName(canvas, dirtyRect, _name.Value);
         
         canvas.RestoreState();      // reseting state to clear gradient fill
-                                    // TODO: When implementing comunication get rid of this
-        //_array.AddValue((float)(_random.NextDouble() * (_max.GetNumber() - _min.GetNumber()) + _min.GetNumber()));
     }
-    public void SetValue(int value) => _array.AddValue(value);
-
     public override int GetPin() => _pin.GetNumber();
+
+    public void SetValue(int value) 
+    {
+        _array.AddValue(
+            CircuitInterpreter.ConvertIntToFloat(
+                value, 
+                _min.GetNumber(), 
+                _max.GetNumber()));
+        if (_logical.ConditionIsTrue(value))
+        {
+            NotificationSender.Notify($"Value of pin {GetPin()} is {value}");
+        }
+    }
+
+    public bool SaveToDB => _monitoredToDB.Value;
+
+    public (bool, string) ExtraVerify() =>
+        (_min.GetNumber() < _max.GetNumber(), "Min value must be less than Max value");
 }

@@ -1,7 +1,4 @@
-﻿using Microsoft.Maui.Controls.PlatformConfiguration;
-using System.Diagnostics;
-
-namespace CourseWorkUI.Model;
+﻿namespace CourseWorkUI.Model;
 
 /// <summary>
 /// Performs actions on file which stores project data
@@ -10,11 +7,14 @@ public static class FileSaver
 {
     public static string Name = "RIoT";     // Default projects name (without extention)
     private static string _path;            // Path to the file (without name)
-    private const string _extention =  
+    private const string _extention =
 #if WINDOWS
     ".riot";  // Extention of project file
 #elif ANDROID
      "";  // Extention of project file
+#else
+# error Filesaver plugin is not setup for this platform
+     ""; // TODO:FIXMELATER:for other platforms
 #endif
 
     static FileSaver()
@@ -58,6 +58,8 @@ public static class FileSaver
         {
             data = inputFile.ReadLine();
         }
+#else
+# error Filesaver plugin is not setup for this platform
 #endif
         return data;
     }
@@ -76,6 +78,8 @@ public static class FileSaver
         _path = fullpath.Replace(Path.GetFileName(fullpath), "");   // Gets the path without name of the file and its extention
 #elif ANDROID
         fullpath = Path.Combine(_path, fullpath+_extention);
+#else
+# error Filesaver plugin is not setup for this platform
 #endif
         using (StreamReader inputFile = 
             new StreamReader(fullpath))
@@ -109,7 +113,9 @@ public static class FileSaver
         _path = Environment.GetFolderPath(
             Environment.SpecialFolder.MyDocuments);
 #elif ANDROID
-        _path = _path = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDocuments).AbsolutePath;
+        _path = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDocuments).AbsolutePath;
+#else
+# error Filesaver plugin is not setup for this platform
 #endif
     }
 }

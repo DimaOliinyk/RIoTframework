@@ -8,8 +8,10 @@ namespace CourseWorkUI.Controller;
 
 public class CircuitController
 {
-    private static Tile?[] UsedPins;
-    public static event Action UpdateScreen;
+    //                (⁠ʘ⁠ᗩ⁠ʘ⁠’)
+    private static Tile?[]? UsedPins;
+    public static event Action? UpdateScreen;
+    private static List<int> MonitoredPins = new();
     public static string? IP
     {
         get => CircuitModel.IPAddress;
@@ -21,15 +23,15 @@ public class CircuitController
         set => CircuitModel.TimeDelay = value; 
     }
 
-    public static void SendData(int pin, int value) =>
-        CircuitModel.Send(CircuitInterpreter.Encode(pin, value));
+    public async static void SendData(int pin, int value) => 
+        await CircuitModel.Send(CircuitInterpreter.Encode(pin, value));
 
     public static async Task StartDataChecking()
     {
-        string res = await CircuitModel.StartDataChecking();
+        string? res = await CircuitModel.StartDataChecking();
         try
         {
-            res = CircuitInterpreter.ExtractData(res);
+            res = CircuitInterpreter.ExtractData(res!);
         }
         catch 
         {
@@ -38,8 +40,9 @@ public class CircuitController
         CircuitInterpreter.Decode(res);
     }
 
-    public static void PrepareData(List<TileGrid> grids) 
+    public static async Task PrepareData(List<TileGrid> grids) 
     {
+        MonitoredPins.Clear();
         UsedPins = new Tile[TileFactory.MaxNumberOfPins];
         foreach (TileGrid grid in MainPage.tileGrids)
         {
@@ -49,7 +52,20 @@ public class CircuitController
                 {
                     UsedPins[tile.GetPin()] = tile; 
                 }
+                if (tile is IDBSaveable && ((IDBSaveable)tile).SaveToDB)
+                {
+                    MonitoredPins.Add(tile.GetPin());
+                }
             }
+        }
+        await SendInitialData();
+    }
+
+    private static async Task SendInitialData()
+    {
+        if(MonitoredPins.Count != 0)
+        { 
+            await CircuitModel.Send(CircuitInterpreter.InitialData(FileController.GetProjectName(), Delay, MonitoredPins)); 
         }
     }
 
@@ -57,7 +73,7 @@ public class CircuitController
     {
         try
         {
-            if (UsedPins[pin] == null)
+            if (UsedPins![pin] == null)
                 return;
             ((IOutput)UsedPins[pin]!).SetValue(val);
             if (UpdateScreen != null) UpdateScreen();
@@ -65,5 +81,14 @@ public class CircuitController
         catch 
         {
         }   
+    }
+
+    public static async Task StartIDLEDataSending(List<int[]> TimePinVal) 
+    {
+        try
+        { 
+            await CircuitModel.StartAutoDataSending(TimePinVal); 
+        }
+        catch { }
     }
 }
