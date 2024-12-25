@@ -13,7 +13,7 @@ public static class FileSaver
 #elif ANDROID
      "";  // Extention of project file
 #else
-# error Filesaver plugin is not setup for this platform
+//# error Filesaver plugin is not setup for this platform
      ""; // TODO:FIXMELATER:for other platforms
 #endif
 
@@ -59,7 +59,7 @@ public static class FileSaver
             data = inputFile.ReadLine();
         }
 #else
-# error Filesaver plugin is not setup for this platform
+//# error Filesaver plugin is not setup for this platform
 #endif
         return data;
     }
@@ -79,7 +79,7 @@ public static class FileSaver
 #elif ANDROID
         fullpath = Path.Combine(_path, fullpath+_extention);
 #else
-# error Filesaver plugin is not setup for this platform
+//# error Filesaver plugin is not setup for this platform
 #endif
         using (StreamReader inputFile = 
             new StreamReader(fullpath))
@@ -113,9 +113,15 @@ public static class FileSaver
         _path = Environment.GetFolderPath(
             Environment.SpecialFolder.MyDocuments);
 #elif ANDROID
-        _path = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDocuments).AbsolutePath;
+        _path = Android.OS
+                       .Environment
+                       .GetExternalStoragePublicDirectory(
+                            Android.OS
+                                   .Environment
+                                   .DirectoryDocuments
+                       )!.AbsolutePath;
 #else
-# error Filesaver plugin is not setup for this platform
+//# error Filesaver plugin is not setup for this platform
 #endif
     }
 }

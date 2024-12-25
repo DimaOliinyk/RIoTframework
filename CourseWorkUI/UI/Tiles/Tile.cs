@@ -78,10 +78,15 @@ public abstract class Tile
     }
 
     /// <summary>
-    /// Gets called when the Tile is 
-    /// determind to have been clicked
+    /// Depricated
     /// </summary>
     public virtual void Clicked() { }
+
+    /// <summary>
+    /// Gets called when the Tile is 
+    /// determind to have been clicked
+    /// and passes the position of cursor
+    /// </summary>
     public virtual void Clicked(Position pos) { }
     public abstract int GetPin();
 }

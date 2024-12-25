@@ -20,6 +20,43 @@
             Changes the mode to the opposite (Running/Editing)
             </summary>
         </member>
+        <member name="M:CourseWorkUI.Controller.CircuitController.SendData(System.Int32,System.Int32)">
+            <summary>
+            Sends data to IoT device
+            </summary>
+            <param name="pin"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:CourseWorkUI.Controller.CircuitController.StartDataChecking">
+            <summary>
+            Starts async sending of get requests to IoT device with delay
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Controller.CircuitController.SendInitialData">
+            <summary>
+            Sends intial data to server:  
+            Project name,
+            Delay,
+            and monitored pins
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Controller.CircuitController.SendDataToPin(System.Int32,System.Int32)">
+            <summary>
+            When data recieved, passes value to tile and updates main screen
+            </summary>
+            <param name="pin"></param>
+            <param name="val"></param>
+        </member>
+        <member name="M:CourseWorkUI.Controller.CircuitController.StartIDLEDataSending(System.Collections.Generic.List{System.Int32[]})">
+            <summary>
+            Gets called to send values to pins with data 
+            interval specified in IDLE page by user
+            </summary>
+            <param name="TimePinVal"></param>
+            <returns></returns>
+        </member>
         <member name="T:CourseWorkUI.Controller.FileController">
             <summary>
             Fowards passed actions from View to
@@ -479,9 +516,76 @@
         </member>
         <member name="M:CourseWorkUI.UI.Tile.Clicked">
             <summary>
+            Depricated
+            </summary>
+        </member>
+        <member name="M:CourseWorkUI.UI.Tile.Clicked(CourseWorkUI.Utilities.Position)">
+            <summary>
             Gets called when the Tile is 
             determind to have been clicked
+            and passes the position of cursor
             </summary>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.Encode(System.Int32,System.Int32)">
+            <summary>
+            Encodes Pin Val data to Json and then to HTTP Content
+            </summary>
+            <param name="pin"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.Decode(System.String)">
+            <summary>
+            Decodes data recieved from IoT device.
+            Data format is CSV
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.ExtractData(System.String)">
+            <summary>
+            Removes Header of incoming responce
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.MonitoredPins(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Encodes list of monitored pins into json format
+            </summary>
+            <param name="monitoredPins"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.ConvertIntToFloat(System.Int32,System.Single,System.Single,System.Int32)">
+            <summary>
+            Converts int value to respective 
+            float value with specified resolution
+            </summary>
+            <param name="val"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="resolution"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.ConvertFloatToInt(System.Single,System.Single,System.Single,System.Int32)">
+            <summary>
+            Converts float value to respective 
+            int value with specified resolution
+            </summary>
+            <param name="val"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="resolution"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CourseWorkUI.Utilities.CircuitInterpreter.InitialData(System.String,System.Double,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Encodes initial data into json format string
+            </summary>
+            <param name="dbName"></param>
+            <param name="delay"></param>
+            <param name="monitoredPins"></param>
+            <returns></returns>
         </member>
         <member name="T:CourseWorkUI.Utilities.CircularArray`1">
             <summary>

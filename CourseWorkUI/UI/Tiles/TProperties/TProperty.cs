@@ -29,5 +29,5 @@ public abstract class TProperty
     /// Checks for correctness of the value of property
     /// </summary>
     /// <returns></returns>
-    public virtual bool IsCorrect() { return true; }
+    public virtual bool IsCorrect() => true;
 }

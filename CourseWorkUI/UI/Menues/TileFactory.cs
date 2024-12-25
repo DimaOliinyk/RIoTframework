@@ -65,7 +65,7 @@ public static class TileFactory
     /// <param name="tileType"></param>
     /// <returns></returns>
     /// <exception cref="InvalidEnumArgumentException"></exception>
-    public static Tile CreateTile(Position pos, string tileType)
+    public static Tile CreateTile(Position pos, string tileType)    
     {
         return tileType switch
         {

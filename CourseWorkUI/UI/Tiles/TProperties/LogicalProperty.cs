@@ -92,5 +92,4 @@ public class LogicalProperty : TProperty
             return false;
         }
     }
-
 }

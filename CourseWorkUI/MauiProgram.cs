@@ -59,7 +59,7 @@ public static class MauiProgram
                     }
                 }));
 #else
-# error AppLifecycle events are not set for this platform
+//# error AppLifecycle events are not set for this platform
 #endif
             })
             .ConfigureFonts(fonts =>

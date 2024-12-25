@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace CourseWorkUI.Utilities;
 
-/*      
+/*          
  *  Example of Project's file:
  *      _@0;0,GRAPH,Graph,,0,255,8,@0;2,GRAPH,Graph,,0,255,8,_@0;2,GRAPH,Graph,,0,255,8,@0;1,BUTTON,BTN,,_@0;3,GRAPH,Graph,,0,255,8,@0;2,GRAPH,Graph,,0,255,8,@0;1,BUTTON,BTN,,@1;0,GAUGE,Pie,,0,255,@0;0,GAUGE,Pie,,0,255,
  *  

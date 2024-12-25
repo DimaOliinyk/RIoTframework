@@ -13,11 +13,11 @@ public partial class FilesMenu : ContentPage
     private static FilePickerFileType _riotFileType =
             new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
             {
-                //TODO:FIXMELATER: add support for IOS
+                //TODO:FIXMELATER: add support for other platforms
                 //{ DevicePlatform.iOS, new[] { "public.my.comic.extension" } }, // UTType values
                 { DevicePlatform.Android, new[] { "application/riot" } },         // MIME type
                 { DevicePlatform.WinUI, new[] { ".riot" } },                     // file extension
-                { DevicePlatform.macOS, new[] { "riot" } },                      // UTType values
+                //{ DevicePlatform.macOS, new[] { "riot" } },                      // UTType values
             });
 
     /// <summary>
@@ -77,6 +77,8 @@ public partial class FilesMenu : ContentPage
     private async void BtnNew_Clicked(object sender, EventArgs e)
     {
         string propmpt = await PropmptProjectNameAsync();
+        if (String.IsNullOrEmpty(propmpt))
+            return;
 
         FileController.Create(propmpt);
         FileController.Save(_tileGrids);
@@ -96,6 +98,8 @@ public partial class FilesMenu : ContentPage
             do
             {
                 propmpt = await PropmptProjectNameAsync();
+                if (String.IsNullOrEmpty(propmpt))
+                    return;
             }
             while (!FileController.SetProjectName(propmpt));    // Checks if name can be set
         }
@@ -122,21 +126,14 @@ public partial class FilesMenu : ContentPage
         while (true)
         {
             if (String.IsNullOrEmpty(propmpt))
-            {
-                await DisplayAlert("Incorrect data", "File name cannot be empty", "OK");
-            }
+                return string.Empty;
             else if (propmpt == "RIoT")
-            {
                 await DisplayAlert("Incorrect data", "File name cannot be \"RIoT\"", "OK");
-            }
             else if (propmpt.Length > 6)
-            {
                 await DisplayAlert("Incorrect data", "File name cannot be longer than 6 characters", "OK");
-            }
             else
-            {
                 break;
-            }
+
             propmpt = await DisplayPromptAsync("", "Enter file name: ");
         }
 
