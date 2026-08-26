@@ -1,5 +1,6 @@
 # RIoT
 Cross platform app for controlling and acquiring data from ESP32 devices. Developed using MAUI.net framework
+<img src="./ReadmeVideos/1000016217-ezgif.com-optimize%20(1).gif" width="25%">
 
 ## Usage Demo
 #### 1. Creating/Opening/Saving Projects
