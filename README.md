@@ -13,7 +13,8 @@ Cross platform app for controlling and acquiring data from ESP32 devices. Develo
 <img src="./ReadmeVideos/ChangingInterval-ezgif.com-video-to-gif-converter_1.gif" width="25%">
 
 #### 4. IDLE Mode 
-<img src="./ReadmeVideos/" width="25%">
+<img src="./ReadmeVideos/IdleMode1-ezgif.com-video-to-gif-converter.gif" width="25%">
+Runs pre-programmed commands when app enters background mode 
 
 #### 5. Sending Notifications
 <img src="./ReadmeVideos/1000017017-ezgif.com-video-to-gif-converter.gif" width="25%">
